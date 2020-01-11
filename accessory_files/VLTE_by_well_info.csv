@@ -1,0 +1,385 @@
+384.well,plate.well,plate,well,contam,strain,ploidy,Investigate?,History
+A01,P1_A01,P1,A01,blank,blank,,,blank from beginning
+A03,P1_A02,P1,A02,blank,blank,,,blank between 3_2_17 and 5_3_17
+A05,P1_A03,P1,A03,No,a,?,,
+A07,P1_A04,P1,A04,No,a,?,,
+A09,P1_A05,P1,A05,No,a,haploid,,
+A11,P1_A06,P1,A06,No,a,haploid,,
+A13,P1_A07,P1,A07,lactis,lactis,haploid,,lactis between 3/2/17 and 3/29/17
+A15,P1_A08,P1,A08,No,diploid,diploid,,
+A17,P1_A09,P1,A09,No,diploid,diploid,,
+A19,P1_A10,P1,A10,blank,blank,,,blank from beginning
+A21,P1_A11,P1,A11,blank,blank,,,blank around 6_4_15
+A23,P1_A12,P1,A12,blank,blank,,,blank from beginning
+C01,P1_B01,P1,B01,No,a,haploid,,
+C03,P1_B02,P1,B02,No,a,haploid,,
+C05,P1_B03,P1,B03,No,a,diploid,,
+C07,P1_B04,P1,B04,No,a,?,,
+C09,P1_B05,P1,B05,No,a,diploid,,
+C11,P1_B06,P1,B06,No,a,haploid,,
+C13,P1_B07,P1,B07,No,diploid,diploid,,
+C15,P1_B08,P1,B08,cerevisiae,cerevisiae,diploid,Y what is it? (it's fluorescent...) and Hyg resistant I think,wrong cerevisiae between 2_1_17 and 11_25_17
+C17,P1_B09,P1,B09,glabrata,glabrata,haploid,,glabrata between gen210 and 2/8/17
+C19,P1_B10,P1,B10,No,diploid,diploid,,
+C21,P1_B11,P1,B11,No,alpha,?,,
+C23,P1_B12,P1,B12,No,diploid,diploid,,
+E01,P1_C01,P1,C01,No,a,haploid,,
+E03,P1_C02,P1,C02,No,a,haploid,,
+E05,P1_C03,P1,C03,No,a,haploid,,
+E07,P1_C04,P1,C04,No,a,haploid,,
+E09,P1_C05,P1,C05,No,a,haploid,,
+E11,P1_C06,P1,C06,No,a,haploid,,
+E13,P1_C07,P1,C07,No,diploid,diploid,,
+E15,P1_C08,P1,C08,No,diploid,diploid,"Y - possibly anueploid, ploidy stain is a little shifted",
+E17,P1_C09,P1,C09,No,diploid,diploid,,
+E19,P1_C10,P1,C10,No,diploid,diploid,,
+E21,P1_C11,P1,C11,No,alpha,haploid,,
+E23,P1_C12,P1,C12,No,diploid,diploid,,
+G01,P1_D01,P1,D01,No,a,diploid,,
+G03,P1_D02,P1,D02,glabrata,glabrata,haploid,,"glabrata between gen210 and 2/8/17; looks like they might have coexisted for some time, FACS data looks like it is not just glabrata"
+G05,P1_D03,P1,D03,No,a,haploid,,
+G07,P1_D04,P1,D04,blank,blank,,,blank from beginning
+G09,P1_D05,P1,D05,No,a,haploid,,
+G11,P1_D06,P1,D06,No,a,diploid,,
+G13,P1_D07,P1,D07,blank,blank,,,blank between 4/1/16 and 2/3/17
+G15,P1_D08,P1,D08,blank,blank,,,blank between 11/23/17 and 1/5/18
+G17,P1_D09,P1,D09,No,diploid,diploid,,
+G19,P1_D10,P1,D10,No,diploid,diploid,,
+G21,P1_D11,P1,D11,lactis,lactis,haploid,,lactis between gen210 and 2/8/17
+G23,P1_D12,P1,D12,No,diploid,diploid,,
+I01,P1_E01,P1,E01,No,a,diploid,,
+I03,P1_E02,P1,E02,No,a,haploid,,
+I05,P1_E03,P1,E03,No,a,haploid,,
+I07,P1_E04,P1,E04,No,a,haploid,,
+I09,P1_E05,P1,E05,No,a,haploid,,
+I11,P1_E06,P1,E06,blank,blank,,,blank between 2/17/18 and 4/2/18
+I13,P1_E07,P1,E07,blank,blank,,,blank between 3/3/17 and 5/3/17
+I15,P1_E08,P1,E08,blank,blank,,,blank between 11/23/17 and 1/5/18
+I17,P1_E09,P1,E09,No,diploid,diploid,,
+I19,P1_E10,P1,E10,No,diploid,diploid,,
+I21,P1_E11,P1,E11,No,alpha,haploid,,
+I23,P1_E12,P1,E12,No,diploid,diploid,y - seems ok to me,
+K01,P1_F01,P1,F01,No,a,diploid,,
+K03,P1_F02,P1,F02,No,a,haploid,,
+K05,P1_F03,P1,F03,No,a,haploid,,
+K07,P1_F04,P1,F04,No,a,haploid,,
+K09,P1_F05,P1,F05,No,a,haploid,,
+K11,P1_F06,P1,F06,blank,blank,,,blank from beginning
+K13,P1_F07,P1,F07,No,diploid,diploid,,
+K15,P1_F08,P1,F08,No,diploid,diploid,,
+K17,P1_F09,P1,F09,No,diploid,diploid,,
+K19,P1_F10,P1,F10,No,diploid,diploid,,
+K21,P1_F11,P1,F11,No,alpha,haploid,,
+K23,P1_F12,P1,F12,glabrata,glabrata,haploid,,glabrata between gen210 and 2/8/17
+M01,P1_G01,P1,G01,No,a,haploid,,
+M03,P1_G02,P1,G02,cerevisiae,cerevisiae,haploid,,went blank between beginning and 1_26_16 and got filled in between 4_1_16 and 2_3_17
+M05,P1_G03,P1,G03,blank,blank,,,blank between beginning and 1/26/16
+M07,P1_G04,P1,G04,No,a,haploid,,
+M09,P1_G05,P1,G05,No,a,haploid,,
+M11,P1_G06,P1,G06,cerevisiae,cerevisiae,diploid,Y - looks like it glows red?,wrong cerevisiae between beginning and 2_1_17
+M13,P1_G07,P1,G07,No,diploid,diploid,,
+M15,P1_G08,P1,G08,No,diploid,diploid,,
+M17,P1_G09,P1,G09,No,diploid,diploid,,
+M19,P1_G10,P1,G10,No,diploid,diploid,,
+M21,P1_G11,P1,G11,No,alpha,haploid,,
+M23,P1_G12,P1,G12,blank,blank,,,blank from beginning
+O01,P1_H01,P1,H01,glabrata,glabrata,haploid,,glabrata between 2/8/17 and 3/2/17; FACS data looks like it is not just glabrata
+O03,P1_H02,P1,H02,No,a,haploid,,
+O05,P1_H03,P1,H03,blank,blank,,,blank between beginning and 1/26/16
+O07,P1_H04,P1,H04,No,a,haploid,,
+O09,P1_H05,P1,H05,No,a,haploid,,
+O11,P1_H06,P1,H06,No,a,haploid,,
+O13,P1_H07,P1,H07,No,diploid,diploid,,
+O15,P1_H08,P1,H08,No,diploid,diploid,,
+O17,P1_H09,P1,H09,No,diploid,diploid,,
+O19,P1_H10,P1,H10,No,diploid,diploid,,
+O21,P1_H11,P1,H11,No,alpha,haploid,,
+O23,P1_H12,P1,H12,No,diploid,diploid,,
+A02,P2_A01,P2,A01,No,a,haploid,,
+A04,P2_A02,P2,A02,blank,blank,,,blank from beginning
+A06,P2_A03,P2,A03,No,a,haploid,,
+A08,P2_A04,P2,A04,No,a,diploid,,
+A10,P2_A05,P2,A05,No,a,haploid,,
+A12,P2_A06,P2,A06,No,a,haploid,,
+A14,P2_A07,P2,A07,No,diploid,diploid,,
+A16,P2_A08,P2,A08,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+A18,P2_A09,P2,A09,No,diploid,diploid,,
+A20,P2_A10,P2,A10,blank,blank,NA,,blank from beginning
+A22,P2_A11,P2,A11,No,alpha,haploid,,
+A24,P2_A12,P2,A12,blank,blank,NA,,blank from beginning
+C02,P2_B01,P2,B01,No,a,haploid,,
+C04,P2_B02,P2,B02,No,a,haploid,,
+C06,P2_B03,P2,B03,No,a,haploid,,
+C08,P2_B04,P2,B04,No,a,?,,
+C10,P2_B05,P2,B05,No,a,haploid,,
+C12,P2_B06,P2,B06,No,a,haploid,,
+C14,P2_B07,P2,B07,No,diploid,diploid,,
+C16,P2_B08,P2,B08,No,diploid,diploid,,
+C18,P2_B09,P2,B09,No,diploid,diploid,,
+C20,P2_B10,P2,B10,No,diploid,diploid,,
+C22,P2_B11,P2,B11,No,alpha,haploid,,
+C24,P2_B12,P2,B12,No,diploid,diploid,,
+E02,P2_C01,P2,C01,No,a,haploid,,
+E04,P2_C02,P2,C02,No,a,haploid,,
+E06,P2_C03,P2,C03,No,a,haploid,,
+E08,P2_C04,P2,C04,No,a,haploid,,
+E10,P2_C05,P2,C05,No,a,haploid,,
+E12,P2_C06,P2,C06,No,a,haploid,,
+E14,P2_C07,P2,C07,No,diploid,diploid,,
+E16,P2_C08,P2,C08,No,diploid,diploid,,
+E18,P2_C09,P2,C09,No,diploid,diploid,,
+E20,P2_C10,P2,C10,No,diploid,diploid,,
+E22,P2_C11,P2,C11,No,alpha,haploid,,
+E24,P2_C12,P2,C12,No,diploid,diploid,,
+G02,P2_D01,P2,D01,No,a,haploid,,
+G04,P2_D02,P2,D02,No,a,haploid,,
+G06,P2_D03,P2,D03,No,a,haploid,,
+G08,P2_D04,P2,D04,blank,blank,NA,,blank from beginning
+G10,P2_D05,P2,D05,No,a,haploid,,
+G12,P2_D06,P2,D06,No,a,haploid,,
+G14,P2_D07,P2,D07,blank,blank,NA,,blank between beginning and 1_26_16
+G16,P2_D08,P2,D08,No,diploid,diploid,,
+G18,P2_D09,P2,D09,No,diploid,diploid,,
+G20,P2_D10,P2,D10,No,diploid,diploid,,
+G22,P2_D11,P2,D11,No,alpha,haploid,,
+G24,P2_D12,P2,D12,No,diploid,diploid,,
+I02,P2_E01,P2,E01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+I04,P2_E02,P2,E02,No,a,haploid,,
+I06,P2_E03,P2,E03,No,a,haploid,,
+I08,P2_E04,P2,E04,No,a,haploid,,
+I10,P2_E05,P2,E05,blank,blank,NA,,blank between 1_15_18 and 2_17_18
+I12,P2_E06,P2,E06,No,a,haploid,,
+I14,P2_E07,P2,E07,blank,blank,NA,,blank between 3_2_17 and 5_3_17
+I16,P2_E08,P2,E08,No,diploid,diploid,,
+I18,P2_E09,P2,E09,No,diploid,diploid,,
+I20,P2_E10,P2,E10,No,diploid,diploid,,
+I22,P2_E11,P2,E11,No,alpha,haploid,,
+I24,P2_E12,P2,E12,No,diploid,diploid,,
+K02,P2_F01,P2,F01,No,a,haploid,,
+K04,P2_F02,P2,F02,No,a,haploid,,
+K06,P2_F03,P2,F03,No,a,haploid,,
+K08,P2_F04,P2,F04,No,a,haploid,,
+K10,P2_F05,P2,F05,No,a,haploid,,
+K12,P2_F06,P2,F06,blank,blank,NA,,blank from beginning
+K14,P2_F07,P2,F07,No,diploid,diploid,,
+K16,P2_F08,P2,F08,No,diploid,diploid,,
+K18,P2_F09,P2,F09,No,diploid,diploid,,
+K20,P2_F10,P2,F10,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+K22,P2_F11,P2,F11,No,alpha,haploid,,
+K24,P2_F12,P2,F12,No,diploid,diploid,,
+M02,P2_G01,P2,G01,No,a,haploid,,
+M04,P2_G02,P2,G02,No,a,haploid,,
+M06,P2_G03,P2,G03,blank,blank,NA,,blank between beginning and 1_26_16
+M08,P2_G04,P2,G04,No,a,haploid,,
+M10,P2_G05,P2,G05,No,a,haploid,,
+M12,P2_G06,P2,G06,No,a,haploid,,
+M14,P2_G07,P2,G07,blank,blank,NA,,blank between 2_17_18 and 4_2_18
+M16,P2_G08,P2,G08,No,diploid,diploid,,
+M18,P2_G09,P2,G09,No,diploid,diploid,,
+M20,P2_G10,P2,G10,No,diploid,diploid,,
+M22,P2_G11,P2,G11,No,alpha,haploid,,
+M24,P2_G12,P2,G12,blank,blank,NA,,blank from beginning
+O02,P2_H01,P2,H01,No,a,haploid,,
+O04,P2_H02,P2,H02,No,a,haploid,,
+O06,P2_H03,P2,H03,No,a,?,,
+O08,P2_H04,P2,H04,No,a,?,,
+O10,P2_H05,P2,H05,No,a,haploid,,
+O12,P2_H06,P2,H06,No,a,haploid,,
+O14,P2_H07,P2,H07,No,diploid,diploid,,
+O16,P2_H08,P2,H08,No,diploid,diploid,,
+O18,P2_H09,P2,H09,No,diploid,diploid,,
+O20,P2_H10,P2,H10,No,diploid,diploid,,
+O22,P2_H11,P2,H11,No,alpha,haploid,,
+O24,P2_H12,P2,H12,No,diploid,diploid,,
+B01,P3_A01,P3,A01,blank,blank,NA,,blank between 2_23_16 and 4_1_16
+B03,P3_A02,P3,A02,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+B05,P3_A03,P3,A03,blank,blank,NA,,blank from beginning
+B07,P3_A04,P3,A04,blank,blank,NA,,blank between beginning and 1_26_16
+B09,P3_A05,P3,A05,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+B11,P3_A06,P3,A06,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+B13,P3_A07,P3,A07,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+B15,P3_A08,P3,A08,blank,blank,NA,,blank between 2_23_16 and 4_1_16
+B17,P3_A09,P3,A09,blank,blank,NA,,blank between 2_23_16 and 4_1_16
+B19,P3_A10,P3,A10,blank,blank,NA,,blank from beginning
+B21,P3_A11,P3,A11,blank,blank,NA,,blank between 2_23_16 and 4_1_16
+B23,P3_A12,P3,A12,blank,blank,NA,,blank from beginning
+D01,P3_B01,P3,B01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+D03,P3_B02,P3,B02,blank,blank,NA,,blank between 1_26_16 and 2_23_16
+D05,P3_B03,P3,B03,blank,blank,NA,,blank between 1_26_16 and 2_23_16
+D07,P3_B04,P3,B04,blank,blank,NA,,blank between 1_26_16 and 2_23_16
+D09,P3_B05,P3,B05,blank,blank,NA,,blank between 1_26_16 and 2_23_16
+D11,P3_B06,P3,B06,No,a,?,,
+D13,P3_B07,P3,B07,No,diploid,diploid,,
+D15,P3_B08,P3,B08,No,diploid,?,,
+D17,P3_B09,P3,B09,blank,blank,NA,,blank between 11_23_17 and 12_9_17
+D19,P3_B10,P3,B10,No,diploid,diploid,,
+D21,P3_B11,P3,B11,No,alpha,haploid,,
+D23,P3_B12,P3,B12,blank,blank,NA,,blank between 2_23_16 and 4_1_16
+F01,P3_C01,P3,C01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+F03,P3_C02,P3,C02,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+F05,P3_C03,P3,C03,No,a,?,,
+F07,P3_C04,P3,C04,No,a,?,,
+F09,P3_C05,P3,C05,No,a,?,,
+F11,P3_C06,P3,C06,No,a,?,,
+F13,P3_C07,P3,C07,No,diploid,diploid,,
+F15,P3_C08,P3,C08,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+F17,P3_C09,P3,C09,No,diploid,diploid,,
+F19,P3_C10,P3,C10,No,diploid,diploid,,
+F21,P3_C11,P3,C11,No,alpha,haploid,,
+F23,P3_C12,P3,C12,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+H01,P3_D01,P3,D01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+H03,P3_D02,P3,D02,No,a,?,,
+H05,P3_D03,P3,D03,No,a,?,,
+H07,P3_D04,P3,D04,blank,blank,NA,,blank from beginning
+H09,P3_D05,P3,D05,No,a,?,,
+H11,P3_D06,P3,D06,No,a,?,,
+H13,P3_D07,P3,D07,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+H15,P3_D08,P3,D08,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+H17,P3_D09,P3,D09,No,diploid,diploid,,
+H19,P3_D10,P3,D10,No,diploid,diploid,,
+H21,P3_D11,P3,D11,No,alpha,?,,
+H23,P3_D12,P3,D12,blank,blank,NA,,blank between 11_23_17 and 12_9_17
+J01,P3_E01,P3,E01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+J03,P3_E02,P3,E02,No,a,?,,
+J05,P3_E03,P3,E03,No,a,?,,
+J07,P3_E04,P3,E04,No,a,?,,
+J09,P3_E05,P3,E05,blank,blank,NA,,blank between 11_23_17 and 12_9_17
+J11,P3_E06,P3,E06,blank,blank,NA,,blank between 2_17_18 and 4_2_18
+J13,P3_E07,P3,E07,blank,blank,NA,,blank between 3_3_17 and 5_3_17
+J15,P3_E08,P3,E08,No,diploid,diploid,,
+J17,P3_E09,P3,E09,blank,blank,NA,,blank between 11_23_17 and 12_9_17
+J19,P3_E10,P3,E10,No,diploid,diploid,,
+J21,P3_E11,P3,E11,No,alpha,haploid,,
+J23,P3_E12,P3,E12,No,diploid,diploid,,
+L01,P3_F01,P3,F01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+L03,P3_F02,P3,F02,No,a,?,,
+L05,P3_F03,P3,F03,No,a,haploid,,
+L07,P3_F04,P3,F04,No,a,?,,
+L09,P3_F05,P3,F05,No,a,?,,
+L11,P3_F06,P3,F06,blank,blank,NA,,blank from beginning
+L13,P3_F07,P3,F07,No,diploid,diploid,,
+L15,P3_F08,P3,F08,No,diploid,diploid,,
+L17,P3_F09,P3,F09,No,diploid,diploid,,
+L19,P3_F10,P3,F10,No,diploid,diploid,,
+L21,P3_F11,P3,F11,No,alpha,?,,
+L23,P3_F12,P3,F12,No,diploid,diploid,,
+N01,P3_G01,P3,G01,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+N03,P3_G02,P3,G02,No,a,?,,
+N05,P3_G03,P3,G03,No,a,?,,
+N07,P3_G04,P3,G04,No,a,?,,
+N09,P3_G05,P3,G05,No,a,haploid,,
+N11,P3_G06,P3,G06,No,a,?,,
+N13,P3_G07,P3,G07,No,diploid,diploid,,
+N15,P3_G08,P3,G08,No,diploid,diploid,,
+N17,P3_G09,P3,G09,No,diploid,diploid,,
+N19,P3_G10,P3,G10,No,diploid,diploid,,
+N21,P3_G11,P3,G11,No,alpha,diploid,,
+N23,P3_G12,P3,G12,blank,blank,NA,,blank from beginning
+P01,P3_H01,P3,H01,blank,blank,NA,,blank between beginning and 1_26_16
+P03,P3_H02,P3,H02,No,a,?,,
+P05,P3_H03,P3,H03,No,a,?,,
+P07,P3_H04,P3,H04,No,a,?,,
+P09,P3_H05,P3,H05,No,a,?,,
+P11,P3_H06,P3,H06,blank,blank,NA,,blank between 5_15_18 and 1_10_19
+P13,P3_H07,P3,H07,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+P15,P3_H08,P3,H08,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+P17,P3_H09,P3,H09,blank,blank,NA,,blank between 6_15_17 and 11_23_17
+P19,P3_H10,P3,H10,blank,blank,NA,,blank between 6_15_17 and 11_23_17
+P21,P3_H11,P3,H11,blank,blank,NA,,blank between 11_23_17 and 12_9_17
+P23,P3_H12,P3,H12,blank,blank,NA,,blank between beginning and 1_26_16
+B02,P4_A01,P4,A01,No,lactis,1,,
+B04,P4_A02,P4,A02,blank,blank,NA,,blank between 3_3_17 and 5_3_17
+B06,P4_A03,P4,A03,No,lactis,1,,
+B08,P4_A04,P4,A04,blank,blank,NA,,blank from beginning
+B10,P4_A05,P4,A05,No,glabrata,1,,
+B12,P4_A06,P4,A06,No,glabrata,1,,
+B14,P4_A07,P4,A07,No,glabrata,1,,
+B16,P4_A08,P4,A08,No,glabrata,2,,
+B18,P4_A09,P4,A09,No,paradoxus,1,,
+B20,P4_A10,P4,A10,blank,blank,NA,,blank from beginning
+B22,P4_A11,P4,A11,glabrata,glabrata,2,,glabrata between gen210 and 2/8/17
+B24,P4_A12,P4,A12,blank,blank,NA,,blank from beginning
+D02,P4_B01,P4,B01,blank,blank,NA,,blank between beginning and 1_26_16
+D04,P4_B02,P4,B02,No,lactis,1,,
+D06,P4_B03,P4,B03,No,lactis,1,,
+D08,P4_B04,P4,B04,No,lactis,1,,
+D10,P4_B05,P4,B05,No,lactis,1,,
+D12,P4_B06,P4,B06,glabrata,glabrata,2,,glabrata at start
+D14,P4_B07,P4,B07,No,lactis,1,,
+D16,P4_B08,P4,B08,No,lactis,1,"Y, weird ploidy stain, could be clumpy or something, isn't nat resistant, but is lactis based on sanger sequencing, so probably just interesting evolution",
+D18,P4_B09,P4,B09,No,lactis,1,,
+D20,P4_B10,P4,B10,No,lactis,1,,
+D22,P4_B11,P4,B11,No,lactis,1,,
+D24,P4_B12,P4,B12,No,lactis,1,,
+F02,P4_C01,P4,C01,glabrata,glabrata,2,,glabrata at start
+F04,P4_C02,P4,C02,No,cerevisiae,2,,
+F06,P4_C03,P4,C03,No,cerevisiae,2,,
+F08,P4_C04,P4,C04,No,cerevisiae,2,,
+F10,P4_C05,P4,C05,glabrata,glabrata,2,,glabrata at start
+F12,P4_C06,P4,C06,glabrata,glabrata,1,,glabrata at start
+F14,P4_C07,P4,C07,glabrata,glabrata,1,,glabrata at start
+F16,P4_C08,P4,C08,No,cerevisiae,2,,
+F18,P4_C09,P4,C09,glabrata,glabrata,2,,glabrata at start
+F20,P4_C10,P4,C10,No,cerevisiae,2,,
+F22,P4_C11,P4,C11,No,cerevisiae,2,,
+F24,P4_C12,P4,C12,No,cerevisiae,2,,
+H02,P4_D01,P4,D01,No,glabrata,1,,
+H04,P4_D02,P4,D02,No,glabrata,2,,
+H06,P4_D03,P4,D03,No,glabrata,1,,
+H08,P4_D04,P4,D04,blank,blank,NA,,blank from beginning
+H10,P4_D05,P4,D05,No,glabrata,2,,
+H12,P4_D06,P4,D06,blank,blank,NA,,blank between 2_17_18 and 4_2_18
+H14,P4_D07,P4,D07,blank,blank,NA,,blank between 4_1_16 and 2_3_17
+H16,P4_D08,P4,D08,No,glabrata,2,,
+H18,P4_D09,P4,D09,No,glabrata,1,,
+H20,P4_D10,P4,D10,No,glabrata,2,,
+H22,P4_D11,P4,D11,No,glabrata,2,,
+H24,P4_D12,P4,D12,No,glabrata,1,,
+J02,P4_E01,P4,E01,No,paradoxus,1,,
+J04,P4_E02,P4,E02,No,paradoxus,1,,
+J06,P4_E03,P4,E03,lactis,lactis,1,,lactis between 10/18/15 and 2/1/17
+J08,P4_E04,P4,E04,No,paradoxus,1,,
+J10,P4_E05,P4,E05,No,paradoxus,1,,
+J12,P4_E06,P4,E06,blank,blank,NA,,blank between 2_17_18 and 4_2_18
+J14,P4_E07,P4,E07,blank,blank,NA,,"blank between beginning and 1_26_16, was glabrata at gen 1300"
+J16,P4_E08,P4,E08,No,paradoxus,1,,
+J18,P4_E09,P4,E09,glabrata,glabrata,1,,glabrata between gen210 and 2/8/17
+J20,P4_E10,P4,E10,No,paradoxus,1,,
+J22,P4_E11,P4,E11,No,paradoxus,1,,
+J24,P4_E12,P4,E12,No,paradoxus,1,,
+L02,P4_F01,P4,F01,No,pichia,2,,
+L04,P4_F02,P4,F02,No,pichia,2,,
+L06,P4_F03,P4,F03,No,pichia,2,,
+L08,P4_F04,P4,F04,No,pichia,2,,
+L10,P4_F05,P4,F05,No,pichia,2,,
+L12,P4_F06,P4,F06,blank,blank,NA,,blank from beginning
+L14,P4_F07,P4,F07,cerevisiae,cerevisiae,2,Y what is it? (it's fluorescent...),cerevisiae between 10/18/15 and 2/1/17
+L16,P4_F08,P4,F08,No,pichia,1?,,
+L18,P4_F09,P4,F09,No,pichia,2,,
+L20,P4_F10,P4,F10,No,pichia,2,,
+L22,P4_F11,P4,F11,No,pichia,2,,
+L24,P4_F12,P4,F12,No,pichia,2,,
+N02,P4_G01,P4,G01,No,pombe,1,,
+N04,P4_G02,P4,G02,No,pombe,1,,
+N06,P4_G03,P4,G03,No,pombe,1,,
+N08,P4_G04,P4,G04,No,pombe,1,,
+N10,P4_G05,P4,G05,No,pombe,1,,
+N12,P4_G06,P4,G06,cerevisiae,cerevisiae,2,Y what is it? (it's fluorescent...),cerevisiae between 10/18/15 and 2/1/17
+N14,P4_G07,P4,G07,glabrata,glabrata,1,,glabrata between 10/18/15 and 2/1/17
+N16,P4_G08,P4,G08,lactis,lactis,1,,lactis between 3/2/17 and 3/29/17
+N18,P4_G09,P4,G09,No,pombe,1,,
+N20,P4_G10,P4,G10,glabrata,glabrata,1,,glabrata between 2/1/17 and 3/2/17
+N22,P4_G11,P4,G11,No,pombe,1,,
+N24,P4_G12,P4,G12,blank,blank,NA,,blank from beginning
+P02,P4_H01,P4,H01,No,pichia,2,,
+P04,P4_H02,P4,H02,No,pichia,2,,
+P06,P4_H03,P4,H03,No,pichia,2,,
+P08,P4_H04,P4,H04,No,pichia,2,,
+P10,P4_H05,P4,H05,No,cerevisiae,2,,
+P12,P4_H06,P4,H06,No,cerevisiae,2,,
+P14,P4_H07,P4,H07,No,cerevisiae,2,,
+P16,P4_H08,P4,H08,No,cerevisiae,2,,
+P18,P4_H09,P4,H09,No,pombe,1,,
+P20,P4_H10,P4,H10,glabrata,glabrata,1,,glabrata between gen210 and 2/8/17
+P22,P4_H11,P4,H11,No,pombe,1,,
+P24,P4_H12,P4,H12,No,pombe,1,,
