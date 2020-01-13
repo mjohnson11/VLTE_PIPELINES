@@ -142,7 +142,7 @@ def process_files(assay_base, assay_name, pe_gate):
 
     ## PROCESSING / GETTING REF FREQUENCY DATA
     mat = []
-    ref_freq_in_blanks = {d.split('/')[-1]: np.mean([get_ref_counts(dat_d[d.split('/')[-1]]['Gen'+str(g)+'_'+well])[-1] for g, well in blanks_for_ref_perc[assay_name[:8]]]) for d in dirs}
+    ref_freq_in_blanks = {d.split('/')[-1]: np.mean([get_ref_counts(dat_d[d.split('/')[-1]]['Gen'+str(g)+'_'+well], pe_gate)[-1] for g, well in blanks_for_ref_perc[assay_name[:8]]]) for d in dirs}
     print('Blank reference freqs:', ref_freq_in_blanks)
     for row in range(8):
         for col in range(12):
@@ -279,7 +279,7 @@ for plate in ['P1', 'P2', 'P3']:
 
 subs[2].legend()
 sns.despine()
-fig.savefig('../../Output/Figs/supp_figs/raw_s_correlations.png' background='transparent', bbox_inches='tight', pad_inches=0.1)
+fig.savefig('../../Output/Figs/supp_figs/raw_s_correlations.png', background='transparent', bbox_inches='tight', pad_inches=0.1)
     
 for row in range(8):
     for col in range(12):
