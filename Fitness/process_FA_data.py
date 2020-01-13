@@ -62,7 +62,7 @@ def well_to_plate_well(well, plates):
     plate_col = (col-1)//2+1
     return plate + '_' + plate_row + str(plate_col).zfill(2)
 
-def get_plate_data(dir_base, plate_set, plate_type='384', lsr2=False):
+def get_plate_data(dir_base, plate_set, plate_type='384'):
     # given a directory base like 'FA_timepoint_0/Specimen_001_', this will try to read in all the files corresponding to each well in a 96 or 384 well plate
     # and will return a dictionary like td['well_id'] = dataframe with facs info
     print('reading from', dir_base)
@@ -95,7 +95,7 @@ def get_plate_data(dir_base, plate_set, plate_type='384', lsr2=False):
         print('Missed files for', len(wells_missed), 'wells:', ' '.join(wells_missed))
     return td
 
-def get_ref_counts(df):
+def get_ref_counts(df, use_gate):
     ref_counts = df.gate(use_gate).shape[0]
     total_counts = df.shape[0]
     if total_counts < 1000: # Excluding timepoints with less than 1000 reads
@@ -106,6 +106,7 @@ def get_ref_counts(df):
     return ref_counts, total_counts-ref_counts, freq
 
 def get_fit(row, tps, gen_string):
+    # Getting ref frequencies, excluding low count (nan) timepoints
     ref_freqs = np.array([row[gen_string + '_Ref_Freq_T' + str(t)] for t in tps if pd.notnull(row[gen_string + '_Ref_Freq_T' + str(t)])])
     times = np.array([t for t in tps if pd.notnull(row[gen_string + '_Ref_Freq_T' + str(t)])])*10
     # excluding time intervals where ref or test is >95% in both timepoints
@@ -116,15 +117,10 @@ def get_fit(row, tps, gen_string):
             break
     if use_tp_until > 0:
         test_freqs = 1-ref_freqs
-        return sci_stats.linregress(times[:use_tp_until+1], np.log(test_freqs[:use_tp_until+1]))[0] - sci_stats.linregress(times[:use_tp_until+1], np.log(ref_freqs[:use_tp_until+1]))[0]
-
-def pick_s_use(row, gen_string):
-    if pd.notnull(row[gen_string + '_s']):
-        return row[gen_string + '_s']
-    else:
-        return row[gen_string + '_s_with_T0']
+        # s = log slope of test freq / reference freq
+        return sci_stats.linregress(times[:use_tp_until+1], np.log(test_freqs[:use_tp_until+1]/ref_freqs[:use_tp_until+1]))[0] 
     
-def process_files(assay_base, assay_name):
+def process_files(assay_base, assay_name, pe_gate):
     ## READING FILES
     tps = [0,1,2,3]
     if 'VGFA2' in assay_base:
@@ -134,10 +130,7 @@ def process_files(assay_base, assay_name):
     dir_d = {d.split('/')[-1]: d for d in dirs}
     dat_d = dict()
     for d in dir_d:
-        if 'LSR2' in dir_d[d].split('/')[1]:
-            dat_d[d] = get_plate_data(dir_d[d] + '/Specimen_001_', plate_sets[dir_d[d].split('/')[0]], lsr2=True)
-        else:
-            dat_d[d] = get_plate_data(dir_d[d] + '/Specimen_001_', plate_sets[dir_d[d].split('/')[0]])
+        dat_d[d] = get_plate_data(dir_d[d] + '/Specimen_001_', plate_sets[dir_d[d].split('/')[0]])
 
     ## It is very clear from the data that we mixed up the plates for 1410 and 5150 when FACSing the last time point. I will fix that here:      
     if assay_name == 'VGFA1_P3_R1':
@@ -160,7 +153,7 @@ def process_files(assay_base, assay_name):
                 g = 'Gen' + str(gen) 
                 for d in dirs:
                     dat_d_name = d.split('/')[-1]
-                    result = get_ref_counts(dat_d[dat_d_name][g+'_'+well]) 
+                    result = get_ref_counts(dat_d[dat_d_name][g+'_'+well], pe_gate) 
                     tmp += list(result) + [(1/ref_freq_in_blanks[dat_d_name])*result[2]]
                     tp = dat_d_name[-1]
                     tmp_colnames += [g+'_Ref_Counts_T'+tp, g+'_NonRef_Counts_T'+tp, g+'_Uncorrected_Ref_Freq_T'+tp, g+'_Ref_Freq_T'+tp]
@@ -170,8 +163,7 @@ def process_files(assay_base, assay_name):
     for gen in gens[assay_name.split('_')[0]]:
         g = 'Gen' + str(gen) 
         td[g+'_s'] = td.apply(lambda r: get_fit(r, tps, g), axis=1)
-        td[g+'_s_with_T0'] = td.apply(lambda r: get_fit(r, tps, g, exclude_zero=False), axis=1)
-
+    
     return dat_d, td
 
 def get_strain(well, ex_d):
@@ -211,7 +203,7 @@ def plot_well_report(well, outname=None):
             tps = [0,1,2,3]
             freqs = np.array([use_row['Gen' + str(gen) + '_Ref_Freq_T' + str(t) + '_R' + str(rep_num+1)] for t in tps])
             freq_subs[rep_num].plot(np.array(tps)*10, 1-freqs)
-            freq_subs[rep_num].annotate('s = ' + str(use_row['Gen' + str(gen) + '_s_with_T0_R'+str(rep_num+1)])[:6], xy=(0.1, 0.8), xycoords='axes fraction', fontsize=15)
+            freq_subs[rep_num].annotate('s = ' + str(use_row['Gen' + str(gen) + '_s_R'+str(rep_num+1)])[:6], xy=(0.1, 0.8), xycoords='axes fraction', fontsize=15)
             freq_subs[rep_num].set_ylim([0, 1])
             freq_subs[rep_num].set_xlim([0, 30])
             if rep_num == 0:
@@ -240,72 +232,56 @@ def plot_well_report(well, outname=None):
 ## BEGIN MAIN ##
 for plate in ['P1', 'P2', 'P3']:
     print(plate)
-    outname = 'browser3/' + plate + '_freq_and_s_data.csv'
-    outcorr = 'browser3/' + plate + '_s_corr.png'
-
     facs_data = dict()
     freq_data = dict()
     for v in ['VGFA1', 'VGFA2']:
         tmp_freq_data = dict()
         for rep in ['R1', 'R2']:
             machine = rep_dict[plate][rep]
-            
             a_base = v+'/'+v+'_'+machine+'/'+ '_'.join([v, plate, rep])
             a_name = a_base.split('/')[-1]
-            use_gate = pe_fitc_ref_gates[plate + '_' + rep]
-            facs_data[a_name], tmp_freq_data[rep] = process_files(a_base, a_name)
+            facs_data[a_name], tmp_freq_data[rep] = process_files(a_base, a_name, pe_fitc_ref_gates[plate + '_' + rep])
         freq_data[v] = tmp_freq_data['R1'].merge(tmp_freq_data['R2'], on='Well', how='inner', suffixes=('_R1', '_R2'))
-        # averaging s columns
-        s_cols = ['s_with_T0', 's']
-        for scol in s_cols:
-            # Standardizing s by subtracting off the s value for the unlabeled strain 2490A for the 8 reps in that assay
-            well_2490_s = []
-            for g in gens[v]:
-                freq_data[v]['Gen'+str(g)+'_'+scol] = np.nanmean(freq_data[v][['Gen'+str(g)+'_'+scol+'_R1', 'Gen'+str(g)+'_'+scol+'_R2']], axis=1)
-                freq_data[v]['Gen'+str(g)+'_'+scol+'_range'] = np.abs(freq_data[v]['Gen'+str(g)+'_'+scol+'_R1'] - freq_data[v]['Gen'+str(g)+'_'+scol+'_R2'])
-                well_2490_s += list(freq_data[v].loc[freq_data[v]['Well']=='D04']['Gen'+str(g)+'_'+scol])
-            print(v, '2490A ', scol, ' vals:', well_2490_s, 'mean:', np.nanmean(well_2490_s))
-            for g in gens[v]:
-                freq_data[v]['Gen'+str(g)+'_'+scol + '_scaled'] = freq_data[v]['Gen'+str(g)+'_'+scol] - np.nanmean(well_2490_s)
-                freq_data[v]['Gen'+str(g)+'_'+scol + '_scaling_stddev'] = [np.nanstd(well_2490_s)]*len(freq_data[v])
+        # averaging s columns and standardizing s by subtracting off the s value for the unlabeled strain 2490A for the 8 reps in that assay
+        well_2490_s = []
+        for g in gens[v]:
+            freq_data[v]['Gen'+str(g)+'_s'] = np.nanmean(freq_data[v][['Gen'+str(g)+'_s_R1', 'Gen'+str(g)+'_s_R2']], axis=1)
+            freq_data[v]['Gen'+str(g)+'_s_range'] = np.abs(freq_data[v]['Gen'+str(g)+'_s_R1'] - freq_data[v]['Gen'+str(g)+'_s_R2'])
+            well_2490_s += list(freq_data[v].loc[freq_data[v]['Well']=='D04']['Gen'+str(g)+'_s'])
+        print(v, '2490A  vals:', well_2490_s, 'mean:', np.nanmean(well_2490_s))
+        for g in gens[v]:
+            freq_data[v]['Gen'+str(g)+'_s_scaled'] = freq_data[v]['Gen'+str(g)+'_s'] - np.nanmean(well_2490_s)
+            freq_data[v]['Gen'+str(g)+'_s_scaling_stddev'] = [np.nanstd(well_2490_s)]*len(freq_data[v])
     fd = freq_data['VGFA1'].merge(freq_data['VGFA2'], on='Well', how='inner')
     
     ## Adding strain / well annotation
-    bwi = pd.read_csv('VLTE_by_well_info.csv')
+    bwi = pd.read_csv('../accessory_files/VLTE_by_well_info.csv')
     exclude_dict = {i[0]: i[1:] for i in bwi[bwi['plate']==plate].as_matrix(['well', 'contam', 'strain'])}
     fd['strain'] = fd['Well'].apply(lambda w: get_strain(w, exclude_dict))
-    fd.to_csv(outname, index=False)
+    fd.to_csv('../../Output/Fitness/' + plate + '_freq_and_s_data.csv', index=False)
     
-    ## Plotting s correlations and s over time
-    color_by_strain = {
-        'a': '#FFB000',
-        'diploid': 'k',
-        'alpha': '#648FFF',
-    }
-    f, subps = pl.subplots(2, 2, figsize=(14, 10))
-    subs = subps[0]
-    traj_subs = subps[1]
-    pl.subplots_adjust(hspace=0.3, wspace=0.3)
+## Plotting s correlations
+fig, subs = pl.subplots(1, 3, figsize=(7.25, 3), dpi=300)
+p = 0
+for plate in ['P1', 'P2', 'P3']:
+    fd = pd.read_csv('../../Output/Fitness/' + plate + '_freq_and_s_data.csv')
     td = fd[fd['strain']!='BAD']
-    for p in range(2):
-        for row in fd.as_matrix(['strain'] + ['Gen'+str(g)+'_'+s_cols[p] + '_scaled' for g in all_gens]):
-            if row[0] in color_by_strain:
-                traj_subs[p].plot(all_gens, row[1:], color=color_by_strain[row[0]])
+    subs[p].plot([-0.2, 0.14], [-0.2, 0.14], linestyle='dashed', c='k', alpha=0.5)
+    for gen in all_gens:
+        subs[p].scatter(td['Gen' + str(gen) + '_s_R1'], td['Gen' + str(gen) + '_s_R2'], s=20, alpha=0.6, label='Gen'+str(gen))
+    subs[p].set_title(plate, fontsize='11', y=0.8)
+    subs[p].tick_params(axis='both', which='major', labelsize=8)
+    subs[p].set_xlabel('Unscaled Fitness, Rep. 1', fontsize=9)
+    subs[p].set_ylabel('Unscaled Fitness, Rep. 2', fontsize=9)
+    subs[p].set_ylim([-0.20, 0.14])
+    subs[p].set_xlim([-0.20, 0.14])
+    p += 1
+
+subs[2].legend()
+sns.despine()
+fig.savefig('../../Output/Figs/supp_figs/raw_s_correlations.png' background='transparent', bbox_inches='tight', pad_inches=0.1)
     
-        subs[p].plot([-0.2, 0.14], [-0.2, 0.14], linestyle='dashed', c='k', alpha=0.5)
-        for gen in all_gens:
-            subs[p].scatter(td['Gen' + str(gen) + '_' + s_cols[p] + '_R1'], td['Gen' + str(gen) + '_' + s_cols[p] + '_R2'], s=20, alpha=0.6, label='Gen'+str(gen))
-        subs[p].set_title(plate, fontsize='20', y=0.8)
-        subs[p].tick_params(axis='both', which='major', labelsize=16)
-        subs[p].set_xlabel('R1_' + s_cols[p], fontsize=16)
-        subs[p].set_ylabel('R2_' + s_cols[p], fontsize=16)
-        subs[p].set_ylim([-0.20, 0.14])
-        subs[p].set_xlim([-0.20, 0.14])
-    subs[1].legend()
-    sns.despine()
-    f.savefig(outcorr, background='transparent', bbox_inches='tight', pad_inches=0.1)
-        
-    for row in range(8):
-        for col in range(12):
-            well = chr(row+65) + str(col+1).zfill(2)
-            plot_well_report(well, outname='browser3/report_graphs/' + plate + '_' + well + '.png')
+for row in range(8):
+    for col in range(12):
+        well = chr(row+65) + str(col+1).zfill(2)
+        plot_well_report(well, outname='../../Output/Browser/FACS_graphs/' + plate + '_' + well + '.png')
