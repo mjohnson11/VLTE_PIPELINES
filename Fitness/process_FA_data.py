@@ -1,16 +1,20 @@
 # A script to process FACS data from 384-well plates and measure fitness using that
 
 # importing
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as pl
 import numpy as np
 from scipy import stats as sci_stats
 import pandas as pd
-import csv
 # this was installed like: pip install FlowCytometryTools
 import FlowCytometryTools as fct
 import seaborn as sns
 from glob import glob
 sns.set_style('white')
+
+# plate 3 only does 8 gens per day
+plate_to_gens_per_day = {'P1': 10, 'P2': 10, 'P3': 8}
 
 # These are controls we originally planned to use to measure ancestral fitness. We had a ton of issues with these, in part probably due to to mutations 
 # present in our ancestral stocks that we wanted to be clonal. In any case, we only use the 2490A strain to standardize fitness, the rest we ignore, but
@@ -105,10 +109,10 @@ def get_ref_counts(df, use_gate):
         freq = ref_counts/total_counts
     return ref_counts, total_counts-ref_counts, freq
 
-def get_fit(row, tps, gen_string):
+def get_fit(row, tps, gen_string, gens_per_day):
     # Getting ref frequencies, excluding low count (nan) timepoints
     ref_freqs = np.array([row[gen_string + '_Ref_Freq_T' + str(t)] for t in tps if pd.notnull(row[gen_string + '_Ref_Freq_T' + str(t)])])
-    times = np.array([t for t in tps if pd.notnull(row[gen_string + '_Ref_Freq_T' + str(t)])])*10
+    times = np.array([t for t in tps if pd.notnull(row[gen_string + '_Ref_Freq_T' + str(t)])])*gens_per_day
     # excluding time intervals where ref or test is >95% in both timepoints
     use_tp_until = len(times)
     for t in range(1, len(times)):
@@ -120,17 +124,17 @@ def get_fit(row, tps, gen_string):
         # s = log slope of test freq / reference freq
         return sci_stats.linregress(times[:use_tp_until+1], np.log(test_freqs[:use_tp_until+1]/ref_freqs[:use_tp_until+1]))[0] 
     
-def process_files(assay_base, assay_name, pe_gate):
+def process_files(v_batch, assay_base, assay_name, pe_gate):
     ## READING FILES
     tps = [0,1,2,3]
-    if 'VGFA2' in assay_base:
+    if v_batch == 'VGFA2':
         dirs = [assay_base+'_D'+str(tp+2)+'_B2_T'+str(tp) for tp in tps]
     else:
         dirs = [assay_base+'_D'+str(tp+2)+'_T'+str(tp) for tp in tps]
     dir_d = {d.split('/')[-1]: d for d in dirs}
     dat_d = dict()
     for d in dir_d:
-        dat_d[d] = get_plate_data(dir_d[d] + '/Specimen_001_', plate_sets[dir_d[d].split('/')[0]])
+        dat_d[d] = get_plate_data(dir_d[d] + '/Specimen_001_', plate_sets[v_batch])
 
     ## It is very clear from the data that we mixed up the plates for 1410 and 5150 when FACSing the last time point. I will fix that here:      
     if assay_name == 'VGFA1_P3_R1':
@@ -149,7 +153,7 @@ def process_files(assay_base, assay_name, pe_gate):
             well = chr(row+65) + str(col+1).zfill(2)
             tmp = [well]
             tmp_colnames = ['Well']
-            for gen in gens[assay_name.split('_')[0]]:
+            for gen in gens[v_batch]:
                 g = 'Gen' + str(gen) 
                 for d in dirs:
                     dat_d_name = d.split('/')[-1]
@@ -160,9 +164,9 @@ def process_files(assay_base, assay_name, pe_gate):
             mat.append(tmp)
                 
     td = pd.DataFrame(mat, columns=tmp_colnames)
-    for gen in gens[assay_name.split('_')[0]]:
+    for gen in gens[v_batch]:
         g = 'Gen' + str(gen) 
-        td[g+'_s'] = td.apply(lambda r: get_fit(r, tps, g), axis=1)
+        td[g+'_s'] = td.apply(lambda r: get_fit(r, tps, g, plate_to_gens_per_day[assay_name.split('_')[1]]), axis=1)
     
     return dat_d, td
 
@@ -238,9 +242,9 @@ for plate in ['P1', 'P2', 'P3']:
         tmp_freq_data = dict()
         for rep in ['R1', 'R2']:
             machine = rep_dict[plate][rep]
-            a_base = v+'/'+v+'_'+machine+'/'+ '_'.join([v, plate, rep])
+            a_base = '../../Data/Fitness/'+v+'/'+v+'_'+machine+'/'+'_'.join([v, plate, rep])
             a_name = a_base.split('/')[-1]
-            facs_data[a_name], tmp_freq_data[rep] = process_files(a_base, a_name, pe_fitc_ref_gates[plate + '_' + rep])
+            facs_data[a_name], tmp_freq_data[rep] = process_files(v, a_base, a_name, pe_fitc_ref_gates[plate + '_' + rep])
         freq_data[v] = tmp_freq_data['R1'].merge(tmp_freq_data['R2'], on='Well', how='inner', suffixes=('_R1', '_R2'))
         # averaging s columns and standardizing s by subtracting off the s value for the unlabeled strain 2490A for the 8 reps in that assay
         well_2490_s = []
@@ -261,23 +265,22 @@ for plate in ['P1', 'P2', 'P3']:
     fd.to_csv('../../Output/Fitness/' + plate + '_freq_and_s_data.csv', index=False)
     
 ## Plotting s correlations
-fig, subs = pl.subplots(1, 3, figsize=(7.25, 3), dpi=300)
+fig, subs = pl.subplots(1, 3, figsize=(7.25, 2), dpi=300, sharex=True, sharey=True)
 p = 0
 for plate in ['P1', 'P2', 'P3']:
     fd = pd.read_csv('../../Output/Fitness/' + plate + '_freq_and_s_data.csv')
     td = fd[fd['strain']!='BAD']
-    subs[p].plot([-0.2, 0.14], [-0.2, 0.14], linestyle='dashed', c='k', alpha=0.5)
+    subs[p].plot([-0.25, 0.2], [-0.25, 0.2], linestyle='dashed', c='k', alpha=0.5, lw=0.5)
     for gen in all_gens:
-        subs[p].scatter(td['Gen' + str(gen) + '_s_R1'], td['Gen' + str(gen) + '_s_R2'], s=20, alpha=0.6, label='Gen'+str(gen))
+        subs[p].scatter(td['Gen' + str(gen) + '_s_R1'], td['Gen' + str(gen) + '_s_R2'], s=10, alpha=0.6, c='k')
     subs[p].set_title(plate, fontsize='11', y=0.8)
     subs[p].tick_params(axis='both', which='major', labelsize=8)
-    subs[p].set_xlabel('Unscaled Fitness, Rep. 1', fontsize=9)
-    subs[p].set_ylabel('Unscaled Fitness, Rep. 2', fontsize=9)
-    subs[p].set_ylim([-0.20, 0.14])
-    subs[p].set_xlim([-0.20, 0.14])
+    if p == 1:
+        subs[p].set_xlabel('Unscaled Fitness, Rep. 1', fontsize=9)
+    if p == 0:
+        subs[p].set_ylabel('Unscaled Fitness, Rep. 2', fontsize=9)
     p += 1
 
-subs[2].legend()
 sns.despine()
 fig.savefig('../../Output/Figs/supp_figs/raw_s_correlations.png', background='transparent', bbox_inches='tight', pad_inches=0.1)
     

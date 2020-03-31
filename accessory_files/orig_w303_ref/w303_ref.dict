@@ -1,0 +1,19 @@
+@HD	VN:1.5
+@SQ	SN:chrI	LN:230221	M5:ecd22ce692bc41b1d7fe2aaf8b731e4e	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrII	LN:813183	M5:e7b0a62f7b0552ea8c23e039ad82dcdb	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrIII	LN:316623	M5:a46af00107c329954e5e503d4c3d5b75	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrIV	LN:1531932	M5:7ccf59fcc8a2a46e532342c175793fcb	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrV	LN:576870	M5:32e17b89453756fa3fc0a26ce742e644	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrVI	LN:270159	M5:50b7977985ca94541172b0d16e3461ef	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrVII	LN:1090929	M5:1b0d1c7643ed0d82d22f2864fbaad388	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrVIII	LN:562646	M5:457f3a5bf2a626a31b58203a1c92a616	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrIX	LN:439888	M5:a6b36a8f54794b0951089738ce40db78	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrX	LN:745749	M5:f7e629f7034535d52a5d7bb03b570937	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrXI	LN:666815	M5:dbdcfae0d86bdf33746b712be4c716e3	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrXII	LN:1078171	M5:0f3fcc4e18f0aa44328b14e76c0ec711	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrXIII	LN:924433	M5:c9f6100cc0c32b014c7fee191a8b1697	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrXIV	LN:784331	M5:976363dfd753a9979240714550b648c1	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrXV	LN:1091288	M5:47a3f0798bbbb5befc177846505ddf6f	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrXVI	LN:948066	M5:64e2570c7a28d02ec8d6d3463e73bc78	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:chrMito	LN:85781	M5:f3b4355fd53e942b2f043ec66ccaa798	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
+@SQ	SN:2-micron	LN:6318	M5:4fce2daa1d5b988f7b1c3f85a72f0561	UR:file:/n/scratchlfs/desai_lab/mjohnson/VLTE_work/testing/w303_ref.fasta
