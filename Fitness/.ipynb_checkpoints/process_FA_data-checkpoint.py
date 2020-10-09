@@ -27,6 +27,8 @@ control_d = {
     'D04': '2490A'
 }
 
+strains = ['a', 'alpha', 'diploid']
+
 # Gating on good cells - this excludes the smallest events, which sometimes are just some sort of junk in the media or machine
 cell_gate = fct.PolyGate([(10000, 5500), (30000, 7000), (300000, 9000), (300000, 7000), (100000, 6000), (40000, 5500)], ['FSC-A', 'SSC-A'])
 # Gates for reference for each plate / machine - the reference FACS results are different depending on the type of media and which machine we used, so the gates are different
@@ -52,6 +54,21 @@ blanks_for_ref_perc = {
     'VGFA2_P1': [(3630, 'A11'), (3630, 'G03'), (3630, 'H03'), (7530, 'A11'), (7530, 'G03'), (7530, 'H03')],
     'VGFA2_P2': [(3630, 'A08'), (3630, 'D07'), (3630, 'F10'), (7530, 'A08'), (7530, 'D07'), (7530, 'F10')],
     'VGFA2_P3': [(3630, 'B02'), (3630, 'B03'), (3630, 'B04'), (7530, 'B02'), (7530, 'B03'), (7530, 'B04')]
+}
+
+# these are wells that have no non-synonymous mutations present in the population at generation 70
+# except the P1_a one, which is not a sequenced population, but has low gen 70 fitness like the only P1_alpha with no mutations
+# (there are no a's with no non-synonymous mutations present at gen 70)
+wells_for_anc_fitness = {
+    'P1_a': ['P1D01'],
+    'P1_alpha': ['P1B11'],
+    'P1_diploid': ['P1B07', 'P1C07', 'P1C08', 'P1C09', 'P1E09', 'P1F07', 'P1F08', 'P1F10', 'P1G08', 'P1G09'],
+    'P2_a': ['P2C02', 'P2C06'],
+    'P2_alpha': ['P2B11', 'P2D11', 'P2E11', 'P2F11', 'P2G11'],
+    'P2_diploid': ['P2B07', 'P2B08', 'P2B09', 'P2B10', 'P2C10', 'P2D08', 'P2F07', 'P2F09', 'P2G09', 'P2G10'],
+    'P3_a': ['P3C05', 'P3G02'],
+    'P3_alpha': ['P3D11', 'P3F11'],
+    'P3_diploid': ['P3B07', 'P3B08', 'P3B10', 'P3C10', 'P3D09', 'P3D10', 'P3E08', 'P3F07', 'P3F09', 'P3G09', 'P3G10']
 }
 
 # Tells which replicate was done on which machine
@@ -158,7 +175,7 @@ def process_files(v_batch, assay_base, assay_name, pe_gate):
                 for d in dirs:
                     dat_d_name = d.split('/')[-1]
                     result = get_ref_counts(dat_d[dat_d_name][g+'_'+well], pe_gate) 
-                    tmp += list(result) + [(1/ref_freq_in_blanks[dat_d_name])*result[2]]
+                    tmp += list(result) + [np.clip((1/ref_freq_in_blanks[dat_d_name])*result[2], 0.01, 0.99)]
                     tp = dat_d_name[-1]
                     tmp_colnames += [g+'_Ref_Counts_T'+tp, g+'_NonRef_Counts_T'+tp, g+'_Uncorrected_Ref_Freq_T'+tp, g+'_Ref_Freq_T'+tp]
             mat.append(tmp)
@@ -256,14 +273,25 @@ for plate in ['P1', 'P2', 'P3']:
         for g in gens[v]:
             freq_data[v]['Gen'+str(g)+'_s_scaled'] = freq_data[v]['Gen'+str(g)+'_s'] - np.nanmean(well_2490_s)
             freq_data[v]['Gen'+str(g)+'_s_scaling_stddev'] = [np.nanstd(well_2490_s)]*len(freq_data[v])
-    fd = freq_data['VGFA1'].merge(freq_data['VGFA2'], on='Well', how='inner')
-    
+            
     ## Adding strain / well annotation
+    fd = freq_data['VGFA1'].merge(freq_data['VGFA2'], on='Well', how='inner')
     bwi = pd.read_csv('../accessory_files/VLTE_by_well_info.csv')
     exclude_dict = {i[0]: i[1:] for i in bwi[bwi['plate']==plate].as_matrix(['well', 'contam', 'strain'])}
     fd['strain'] = fd['Well'].apply(lambda w: get_strain(w, exclude_dict))
+    g70_wells_per_strain = {s: [w[2:] for w in wells_for_anc_fitness[plate+'_'+s]] for s in strains}
+    g70_strain_fit = {s: np.nanmedian(fd[fd['Well'].isin(g70_wells_per_strain[s])]['Gen70_s_scaled']) for s in strains}
+    for gen in all_gens:
+        fd['Gen'+str(gen) + '_s_zeroed'] = fd.apply(lambda r: r['Gen'+str(gen) + '_s_scaled'] - g70_strain_fit.setdefault(r['strain'], np.nan), axis=1)
+    fd['platewell'] = plate + fd['Well']
     fd.to_csv('../../Output/Fitness/' + plate + '_freq_and_s_data.csv', index=False)
-    
+    fd.to_csv('../../Output/Browser/' + plate + '_freq_and_s_data.csv', index=False) # Also output for browser
+   
+    for row in range(8):
+        for col in range(12):
+            well = chr(row+65) + str(col+1).zfill(2)
+            plot_well_report(well, outname='../../Output/Browser/FACS_graphs/' + plate + '_' + well + '.png')  
+
 ## Plotting s correlations
 fig, subs = pl.subplots(1, 3, figsize=(7.25, 2), dpi=300, sharex=True, sharey=True)
 p = 0
@@ -283,8 +311,4 @@ for plate in ['P1', 'P2', 'P3']:
 
 sns.despine()
 fig.savefig('../../Output/Figs/supp_figs/raw_s_correlations.png', background='transparent', bbox_inches='tight', pad_inches=0.1)
-    
-for row in range(8):
-    for col in range(12):
-        well = chr(row+65) + str(col+1).zfill(2)
-        plot_well_report(well, outname='../../Output/Browser/FACS_graphs/' + plate + '_' + well + '.png')
+   

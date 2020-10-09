@@ -1,0 +1,539 @@
+G70_P1C04	../../Output/WGS/combined_work/G70_P1C04.final.bam
+G70_P1C09	../../Output/WGS/combined_work/G70_P1C09.final.bam
+G70_P1F08	../../Output/WGS/combined_work/G70_P1F08.final.bam
+G70_P1D09	../../Output/WGS/combined_work/G70_P1D09.final.bam
+G70_P1C08	../../Output/WGS/combined_work/G70_P1C08.final.bam
+G70_P1F10	../../Output/WGS/combined_work/G70_P1F10.final.bam
+G70_P1G08	../../Output/WGS/combined_work/G70_P1G08.final.bam
+G70_P3D03	../../Output/WGS/combined_work/G70_P3D03.final.bam
+G70_P3F05	../../Output/WGS/combined_work/G70_P3F05.final.bam
+G70_P3F03	../../Output/WGS/combined_work/G70_P3F03.final.bam
+G70_P3G05	../../Output/WGS/combined_work/G70_P3G05.final.bam
+G70_P3G02	../../Output/WGS/combined_work/G70_P3G02.final.bam
+G70_P3C05	../../Output/WGS/combined_work/G70_P3C05.final.bam
+G70_P3C04	../../Output/WGS/combined_work/G70_P3C04.final.bam
+G70_P3D05	../../Output/WGS/combined_work/G70_P3D05.final.bam
+G70_P3C03	../../Output/WGS/combined_work/G70_P3C03.final.bam
+G70_P3G06	../../Output/WGS/combined_work/G70_P3G06.final.bam
+G70_P3E02	../../Output/WGS/combined_work/G70_P3E02.final.bam
+G70_P3B11	../../Output/WGS/combined_work/G70_P3B11.final.bam
+G70_P3C11	../../Output/WGS/combined_work/G70_P3C11.final.bam
+G70_P1F07	../../Output/WGS/combined_work/G70_P1F07.final.bam
+G70_P3D11	../../Output/WGS/combined_work/G70_P3D11.final.bam
+G70_P1G10	../../Output/WGS/combined_work/G70_P1G10.final.bam
+G70_P1C07	../../Output/WGS/combined_work/G70_P1C07.final.bam
+G70_P1G04	../../Output/WGS/combined_work/G70_P1G04.final.bam
+G70_P1C06	../../Output/WGS/combined_work/G70_P1C06.final.bam
+G70_P1E04	../../Output/WGS/combined_work/G70_P1E04.final.bam
+G70_P1B03	../../Output/WGS/combined_work/G70_P1B03.final.bam
+G70_P1B04	../../Output/WGS/combined_work/G70_P1B04.final.bam
+G70_P1C02	../../Output/WGS/combined_work/G70_P1C02.final.bam
+G70_P1G05	../../Output/WGS/combined_work/G70_P1G05.final.bam
+G70_P1B02	../../Output/WGS/combined_work/G70_P1B02.final.bam
+G70_P1C05	../../Output/WGS/combined_work/G70_P1C05.final.bam
+G70_P1D03	../../Output/WGS/combined_work/G70_P1D03.final.bam
+G70_P1F05	../../Output/WGS/combined_work/G70_P1F05.final.bam
+G70_P1B11	../../Output/WGS/combined_work/G70_P1B11.final.bam
+G70_P1C11	../../Output/WGS/combined_work/G70_P1C11.final.bam
+G70_P1E11	../../Output/WGS/combined_work/G70_P1E11.final.bam
+G70_P1F11	../../Output/WGS/combined_work/G70_P1F11.final.bam
+G70_P1G11	../../Output/WGS/combined_work/G70_P1G11.final.bam
+G70_P1H11	../../Output/WGS/combined_work/G70_P1H11.final.bam
+G70_P1E09	../../Output/WGS/combined_work/G70_P1E09.final.bam
+G70_P1B07	../../Output/WGS/combined_work/G70_P1B07.final.bam
+G70_P1G09	../../Output/WGS/combined_work/G70_P1G09.final.bam
+G70_P3E11	../../Output/WGS/combined_work/G70_P3E11.final.bam
+G70_P3D02	../../Output/WGS/combined_work/G70_P3D02.final.bam
+G70_P3G11	../../Output/WGS/combined_work/G70_P3G11.final.bam
+G70_P2B04	../../Output/WGS/combined_work/G70_P2B04.final.bam
+G70_P2B11	../../Output/WGS/combined_work/G70_P2B11.final.bam
+G70_P2C11	../../Output/WGS/combined_work/G70_P2C11.final.bam
+G70_P2D11	../../Output/WGS/combined_work/G70_P2D11.final.bam
+G70_P2E11	../../Output/WGS/combined_work/G70_P2E11.final.bam
+G70_P2F11	../../Output/WGS/combined_work/G70_P2F11.final.bam
+G70_P2G11	../../Output/WGS/combined_work/G70_P2G11.final.bam
+G70_P2G09	../../Output/WGS/combined_work/G70_P2G09.final.bam
+G70_P2C10	../../Output/WGS/combined_work/G70_P2C10.final.bam
+G70_P2D08	../../Output/WGS/combined_work/G70_P2D08.final.bam
+G70_P2F09	../../Output/WGS/combined_work/G70_P2F09.final.bam
+G70_P3F11	../../Output/WGS/combined_work/G70_P3F11.final.bam
+G70_P2E08	../../Output/WGS/combined_work/G70_P2E08.final.bam
+G70_P2B08	../../Output/WGS/combined_work/G70_P2B08.final.bam
+G70_P2B10	../../Output/WGS/combined_work/G70_P2B10.final.bam
+G70_P2G10	../../Output/WGS/combined_work/G70_P2G10.final.bam
+G70_P2B07	../../Output/WGS/combined_work/G70_P2B07.final.bam
+G70_P2F07	../../Output/WGS/combined_work/G70_P2F07.final.bam
+G70_P2G08	../../Output/WGS/combined_work/G70_P2G08.final.bam
+G70_P2C06	../../Output/WGS/combined_work/G70_P2C06.final.bam
+G70_P2D06	../../Output/WGS/combined_work/G70_P2D06.final.bam
+G70_P2B09	../../Output/WGS/combined_work/G70_P2B09.final.bam
+G70_P2C05	../../Output/WGS/combined_work/G70_P2C05.final.bam
+G70_P2C04	../../Output/WGS/combined_work/G70_P2C04.final.bam
+G70_P3F07	../../Output/WGS/combined_work/G70_P3F07.final.bam
+G70_P3F09	../../Output/WGS/combined_work/G70_P3F09.final.bam
+G70_P3G09	../../Output/WGS/combined_work/G70_P3G09.final.bam
+G70_P3D10	../../Output/WGS/combined_work/G70_P3D10.final.bam
+G70_P3B08	../../Output/WGS/combined_work/G70_P3B08.final.bam
+G70_P3C07	../../Output/WGS/combined_work/G70_P3C07.final.bam
+G70_P3B07	../../Output/WGS/combined_work/G70_P3B07.final.bam
+G70_P3E08	../../Output/WGS/combined_work/G70_P3E08.final.bam
+G70_P3G10	../../Output/WGS/combined_work/G70_P3G10.final.bam
+G70_P3B10	../../Output/WGS/combined_work/G70_P3B10.final.bam
+G70_P3D09	../../Output/WGS/combined_work/G70_P3D09.final.bam
+G70_P2G05	../../Output/WGS/combined_work/G70_P2G05.final.bam
+G70_P2C02	../../Output/WGS/combined_work/G70_P2C02.final.bam
+G70_P2G04	../../Output/WGS/combined_work/G70_P2G04.final.bam
+G70_P2B05	../../Output/WGS/combined_work/G70_P2B05.final.bam
+G70_P2D03	../../Output/WGS/combined_work/G70_P2D03.final.bam
+G70_P2F02	../../Output/WGS/combined_work/G70_P2F02.final.bam
+G70_P3C10	../../Output/WGS/combined_work/G70_P3C10.final.bam
+G70_P2E06	../../Output/WGS/combined_work/G70_P2E06.final.bam
+G1410_P2C11	
+G1410_P2B11	
+G1410_P2B04	
+G1410_P2C06	
+G1410_P2D06	
+G1410_P2C04	
+G1410_P2F02	../../Output/WGS/work/G7530_P2G08.final.bam
+G1410_P2E06	
+G1410_P2D03	../../Output/WGS/work/G7530_P2F07.final.bam
+G1410_P2B05	../../Output/WGS/work/G7530_P2B07.final.bam
+G1410_P2D11	
+G1410_P2G04	../../Output/WGS/work/G7530_P2G10.final.bam
+G1410_P2C05	
+G1410_P2E11	
+G1410_P2B10	
+G1410_P2G11	
+G1410_P2G09	
+G1410_P2C10	
+G1410_P2D08	
+G1410_P2F09	
+G1410_P2B09	
+G1410_P2E08	
+G1410_P2B08	
+G1410_P2G10	
+G1410_P2B07	
+G1410_P2F07	
+G1410_P2G08	
+G1410_P2C02	../../Output/WGS/work/G7530_P2B10.final.bam
+G1410_P2F11	
+G1410_P2G05	../../Output/WGS/work/G7530_P2B08.final.bam
+G1410_P1C04	../../Output/WGS/work/G7530_P1C09.final.bam
+G1410_P1C06	../../Output/WGS/work/G7530_P1D09.final.bam
+G1410_P3F05	../../Output/WGS/work/G7530_P3E08.final.bam
+G1410_P3F03	../../Output/WGS/work/G7530_P3G10.final.bam
+G1410_P3G05	../../Output/WGS/work/G7530_P3C10.final.bam
+G1410_P3G02	../../Output/WGS/work/G7530_P3D09.final.bam
+G1410_P3C05	../../Output/WGS/work/G70_P2G05.final.bam
+G1410_P3C04	../../Output/WGS/work/G70_P2C02.final.bam
+G1410_P3D05	../../Output/WGS/work/G70_P2G04.final.bam
+G1410_P3C03	../../Output/WGS/work/G70_P2B05.final.bam
+G1410_P3G06	../../Output/WGS/work/G70_P2D03.final.bam
+G1410_P3E02	../../Output/WGS/work/G70_P2F02.final.bam
+G1410_P3B11	../../Output/WGS/work/G70_P2E06.final.bam
+G1410_P3C11	../../Output/WGS/work/G70_P2C05.final.bam
+G1410_P3D11	../../Output/WGS/work/G70_P2C04.final.bam
+G1410_P3E11	../../Output/WGS/work/G70_P2D06.final.bam
+G1410_P3F11	../../Output/WGS/work/G70_P2C06.final.bam
+G1410_P3G11	../../Output/WGS/work/G70_P2B04.final.bam
+G1410_P3F07	../../Output/WGS/work/G70_P2B11.final.bam
+G1410_P3F09	../../Output/WGS/work/G70_P2C11.final.bam
+G1410_P3G09	../../Output/WGS/work/G70_P2D11.final.bam
+G1410_P3B10	../../Output/WGS/work/G70_P2E11.final.bam
+G1410_P3D10	../../Output/WGS/work/G70_P2F11.final.bam
+G1410_P3C07	../../Output/WGS/work/G70_P2G09.final.bam
+G1410_P3B07	../../Output/WGS/work/G70_P2C10.final.bam
+G1410_P3E08	../../Output/WGS/work/G70_P2D08.final.bam
+G1410_P3G10	../../Output/WGS/work/G70_P2F09.final.bam
+G1410_P3D02	../../Output/WGS/work/G7530_P3B07.final.bam
+G1410_P3C10	../../Output/WGS/work/G70_P2B09.final.bam
+G1410_P1G08	../../Output/WGS/work/G70_P3B08.final.bam
+G1410_P1C08	../../Output/WGS/work/G70_P3B10.final.bam
+G1410_P1G04	../../Output/WGS/work/G7530_P1F08.final.bam
+G1410_P1E04	../../Output/WGS/work/G7530_P1C08.final.bam
+G1410_P3D03	../../Output/WGS/work/G7530_P3C07.final.bam
+G1410_P1B03	../../Output/WGS/work/G7530_P1F10.final.bam
+G1410_P1B04	../../Output/WGS/work/G7530_P1G08.final.bam
+G1410_P1C02	../../Output/WGS/work/G70_P3D03.final.bam
+G1410_P1G05	../../Output/WGS/work/G70_P3D02.final.bam
+G1410_P1B02	../../Output/WGS/work/G70_P3F05.final.bam
+G1410_P1C05	../../Output/WGS/work/G70_P3F03.final.bam
+G1410_P1D03	../../Output/WGS/work/G70_P3G05.final.bam
+G1410_P1F05	../../Output/WGS/work/G70_P3G02.final.bam
+G1410_P1B11	../../Output/WGS/work/G70_P3C05.final.bam
+G1410_P1C11	../../Output/WGS/work/G70_P3C04.final.bam
+G1410_P1E11	../../Output/WGS/work/G70_P3D05.final.bam
+G1410_P1F11	../../Output/WGS/work/G70_P3C03.final.bam
+G1410_P1G11	../../Output/WGS/work/G70_P3G06.final.bam
+G1410_P1H11	../../Output/WGS/work/G70_P3E02.final.bam
+G1410_P1E09	../../Output/WGS/work/G70_P3B11.final.bam
+G1410_P1B07	../../Output/WGS/work/G70_P3C11.final.bam
+G1410_P1G09	../../Output/WGS/work/G70_P3E11.final.bam
+G1410_P1G10	../../Output/WGS/work/G70_P3F11.final.bam
+G1410_P1F07	../../Output/WGS/work/G70_P3G11.final.bam
+G1410_P1C09	../../Output/WGS/work/G70_P3F07.final.bam
+G1410_P1F08	../../Output/WGS/work/G70_P3F09.final.bam
+G1410_P1D09	../../Output/WGS/work/G70_P3G09.final.bam
+G1410_P1F10	../../Output/WGS/work/G70_P3D10.final.bam
+G1410_P3D09	../../Output/WGS/work/G70_P2E08.final.bam
+G1410_P3B08	../../Output/WGS/work/G70_P2G11.final.bam
+G2640_P1C04	../../Output/WGS/combined_work/G2640_P1C04.final.bam
+G2640_P3F09	../../Output/WGS/combined_work/G2640_P3F09.final.bam
+G2640_P3F07	../../Output/WGS/combined_work/G2640_P3F07.final.bam
+G2640_P3G11	../../Output/WGS/combined_work/G2640_P3G11.final.bam
+G2640_P3F11	../../Output/WGS/combined_work/G2640_P3F11.final.bam
+G2640_P3E11	../../Output/WGS/combined_work/G2640_P3E11.final.bam
+G2640_P3D11	../../Output/WGS/combined_work/G2640_P3D11.final.bam
+G2640_P3G09	../../Output/WGS/combined_work/G2640_P3G09.final.bam
+G2640_P3C11	../../Output/WGS/combined_work/G2640_P3C11.final.bam
+G2640_P3E02	../../Output/WGS/combined_work/G2640_P3E02.final.bam
+G2640_P3G06	../../Output/WGS/combined_work/G2640_P3G06.final.bam
+G2640_P3C03	../../Output/WGS/combined_work/G2640_P3C03.final.bam
+G2640_P3D05	../../Output/WGS/combined_work/G2640_P3D05.final.bam
+G2640_P3C04	../../Output/WGS/combined_work/G2640_P3C04.final.bam
+G2640_P3C05	../../Output/WGS/combined_work/G2640_P3C05.final.bam
+G2640_P3B11	../../Output/WGS/combined_work/G2640_P3B11.final.bam
+G2640_P3B10	../../Output/WGS/combined_work/G2640_P3B10.final.bam
+G2640_P3D10	../../Output/WGS/combined_work/G2640_P3D10.final.bam
+G2640_P3B08	../../Output/WGS/combined_work/G2640_P3B08.final.bam
+G2640_P2B04	../../Output/WGS/combined_work/G2640_P2B04.final.bam
+G2640_P2C06	../../Output/WGS/combined_work/G2640_P2C06.final.bam
+G2640_P2D06	../../Output/WGS/combined_work/G2640_P2D06.final.bam
+G2640_P2C04	../../Output/WGS/combined_work/G2640_P2C04.final.bam
+G2640_P2C05	../../Output/WGS/combined_work/G2640_P2C05.final.bam
+G2640_P2E06	../../Output/WGS/combined_work/G2640_P2E06.final.bam
+G2640_P2F02	../../Output/WGS/combined_work/G2640_P2F02.final.bam
+G2640_P2D03	../../Output/WGS/combined_work/G2640_P2D03.final.bam
+G2640_P2B05	../../Output/WGS/combined_work/G2640_P2B05.final.bam
+G2640_P2G04	../../Output/WGS/combined_work/G2640_P2G04.final.bam
+G2640_P2C02	../../Output/WGS/combined_work/G2640_P2C02.final.bam
+G2640_P2G05	../../Output/WGS/combined_work/G2640_P2G05.final.bam
+G2640_P3B07	../../Output/WGS/combined_work/G2640_P3B07.final.bam
+G2640_P3E08	../../Output/WGS/combined_work/G2640_P3E08.final.bam
+G2640_P3C07	../../Output/WGS/combined_work/G2640_P3C07.final.bam
+G2640_P3G02	../../Output/WGS/combined_work/G2640_P3G02.final.bam
+G2640_P1G04	../../Output/WGS/combined_work/G2640_P1G04.final.bam
+G2640_P3G05	../../Output/WGS/combined_work/G2640_P3G05.final.bam
+G2640_P3F05	../../Output/WGS/combined_work/G2640_P3F05.final.bam
+G2640_P1E11	../../Output/WGS/combined_work/G2640_P1E11.final.bam
+G2640_P1C11	../../Output/WGS/combined_work/G2640_P1C11.final.bam
+G2640_P1B11	../../Output/WGS/combined_work/G2640_P1B11.final.bam
+G2640_P1F05	../../Output/WGS/combined_work/G2640_P1F05.final.bam
+G2640_P1D03	../../Output/WGS/combined_work/G2640_P1D03.final.bam
+G2640_P1C05	../../Output/WGS/combined_work/G2640_P1C05.final.bam
+G2640_P1F11	../../Output/WGS/combined_work/G2640_P1F11.final.bam
+G2640_P1B02	../../Output/WGS/combined_work/G2640_P1B02.final.bam
+G2640_P1G05	../../Output/WGS/combined_work/G2640_P1G05.final.bam
+G2640_P1C02	../../Output/WGS/combined_work/G2640_P1C02.final.bam
+G2640_P1B04	../../Output/WGS/combined_work/G2640_P1B04.final.bam
+G2640_P1B03	../../Output/WGS/combined_work/G2640_P1B03.final.bam
+G2640_P1E04	../../Output/WGS/combined_work/G2640_P1E04.final.bam
+G2640_P1C06	../../Output/WGS/combined_work/G2640_P1C06.final.bam
+G2640_P2B11	../../Output/WGS/combined_work/G2640_P2B11.final.bam
+G2640_P1G11	../../Output/WGS/combined_work/G2640_P1G11.final.bam
+G2640_P1H11	../../Output/WGS/combined_work/G2640_P1H11.final.bam
+G2640_P1E09	../../Output/WGS/combined_work/G2640_P1E09.final.bam
+G2640_P3D02	../../Output/WGS/combined_work/G2640_P3D02.final.bam
+G2640_P3D03	../../Output/WGS/combined_work/G2640_P3D03.final.bam
+G2640_P3C10	../../Output/WGS/combined_work/G2640_P3C10.final.bam
+G2640_P3D09	../../Output/WGS/combined_work/G2640_P3D09.final.bam
+G2640_P1G08	../../Output/WGS/combined_work/G2640_P1G08.final.bam
+G2640_P1F10	../../Output/WGS/combined_work/G2640_P1F10.final.bam
+G2640_P1C08	../../Output/WGS/combined_work/G2640_P1C08.final.bam
+G2640_P1D09	../../Output/WGS/combined_work/G2640_P1D09.final.bam
+G2640_P1F08	../../Output/WGS/combined_work/G2640_P1F08.final.bam
+G2640_P1C09	../../Output/WGS/combined_work/G2640_P1C09.final.bam
+G2640_P1F07	../../Output/WGS/combined_work/G2640_P1F07.final.bam
+G2640_P1G10	../../Output/WGS/combined_work/G2640_P1G10.final.bam
+G2640_P1G09	../../Output/WGS/combined_work/G2640_P1G09.final.bam
+G2640_P1C07	../../Output/WGS/combined_work/G2640_P1C07.final.bam
+G2640_P1B07	../../Output/WGS/combined_work/G2640_P1B07.final.bam
+G2640_P3F03	../../Output/WGS/combined_work/G2640_P3F03.final.bam
+G2640_P2C11	../../Output/WGS/combined_work/G2640_P2C11.final.bam
+G2640_P3G10	../../Output/WGS/combined_work/G2640_P3G10.final.bam
+G2640_P2E11	../../Output/WGS/combined_work/G2640_P2E11.final.bam
+G2640_P2G08	../../Output/WGS/combined_work/G2640_P2G08.final.bam
+G2640_P2D11	../../Output/WGS/combined_work/G2640_P2D11.final.bam
+G2640_P2F07	../../Output/WGS/combined_work/G2640_P2F07.final.bam
+G2640_P2G10	../../Output/WGS/combined_work/G2640_P2G10.final.bam
+G2640_P2B10	../../Output/WGS/combined_work/G2640_P2B10.final.bam
+G2640_P2B08	../../Output/WGS/combined_work/G2640_P2B08.final.bam
+G2640_P2E08	../../Output/WGS/combined_work/G2640_P2E08.final.bam
+G2640_P2B07	../../Output/WGS/combined_work/G2640_P2B07.final.bam
+G2640_P2F09	../../Output/WGS/combined_work/G2640_P2F09.final.bam
+G2640_P2F11	../../Output/WGS/combined_work/G2640_P2F11.final.bam
+G2640_P2B09	../../Output/WGS/combined_work/G2640_P2B09.final.bam
+G2640_P2G09	../../Output/WGS/combined_work/G2640_P2G09.final.bam
+G2640_P2G11	../../Output/WGS/combined_work/G2640_P2G11.final.bam
+G2640_P2C10	../../Output/WGS/combined_work/G2640_P2C10.final.bam
+G2640_P2D08	../../Output/WGS/combined_work/G2640_P2D08.final.bam
+G5150_P1B02	../../Output/WGS/work/G2640_P3F05.final.bam
+G5150_P1C05	../../Output/WGS/work/G2640_P3F03.final.bam
+G5150_P1F11	../../Output/WGS/work/G2640_P3C03.final.bam
+G5150_P1D03	../../Output/WGS/work/G2640_P3G05.final.bam
+G5150_P1F05	../../Output/WGS/work/G2640_P3G02.final.bam
+G5150_P1B11	../../Output/WGS/work/G2640_P3C05.final.bam
+G5150_P1C11	../../Output/WGS/work/G2640_P3C04.final.bam
+G5150_P1E11	../../Output/WGS/work/G2640_P3D05.final.bam
+G5150_P1G05	../../Output/WGS/work/G2640_P3D02.final.bam
+G5150_P1G11	../../Output/WGS/work/G2640_P3G06.final.bam
+G5150_P1F07	../../Output/WGS/work/G2640_P3G11.final.bam
+G5150_P1E09	../../Output/WGS/work/G2640_P3B11.final.bam
+G5150_P1B07	../../Output/WGS/work/G2640_P3C11.final.bam
+G5150_P1C07	../../Output/WGS/work/G2640_P3D11.final.bam
+G5150_P1G09	../../Output/WGS/work/G2640_P3E11.final.bam
+G5150_P1G10	../../Output/WGS/work/G2640_P3F11.final.bam
+G5150_P1C02	../../Output/WGS/work/G2640_P3D03.final.bam
+G5150_P1C09	../../Output/WGS/work/G2640_P3F07.final.bam
+G5150_P1F08	../../Output/WGS/work/G2640_P3F09.final.bam
+G5150_P1D09	../../Output/WGS/work/G2640_P3G09.final.bam
+G5150_P1C08	../../Output/WGS/work/G2640_P3B10.final.bam
+G5150_P1F10	../../Output/WGS/work/G2640_P3D10.final.bam
+G5150_P1G08	../../Output/WGS/work/G2640_P3B08.final.bam
+G5150_P3D09	../../Output/WGS/work/G2640_P2E08.final.bam
+G5150_P1H11	../../Output/WGS/work/G2640_P3E02.final.bam
+G5150_P1B04	../../Output/WGS/work/G70_P3D09.final.bam
+G5150_P3B07	../../Output/WGS/work/G2640_P2C10.final.bam
+G5150_P1E04	../../Output/WGS/work/G70_P3G10.final.bam
+G5150_P3F03	../../Output/WGS/work/G70_P2B07.final.bam
+G5150_P3G05	../../Output/WGS/work/G70_P2F07.final.bam
+G5150_P3G02	../../Output/WGS/work/G70_P2G08.final.bam
+G5150_P3C05	../../Output/WGS/work/G2640_P2G05.final.bam
+G5150_P3C04	../../Output/WGS/work/G2640_P2C02.final.bam
+G5150_P3D05	../../Output/WGS/work/G2640_P2G04.final.bam
+G5150_P3C03	../../Output/WGS/work/G2640_P2B05.final.bam
+G5150_P3G06	../../Output/WGS/work/G2640_P2D03.final.bam
+G5150_P3E02	../../Output/WGS/work/G2640_P2F02.final.bam
+G5150_P3B11	../../Output/WGS/work/G2640_P2E06.final.bam
+G5150_P3C11	../../Output/WGS/work/G2640_P2C05.final.bam
+G5150_P3D11	../../Output/WGS/work/G2640_P2C04.final.bam
+G5150_P1B03	../../Output/WGS/work/G70_P3C10.final.bam
+G5150_P3E11	../../Output/WGS/work/G2640_P2D06.final.bam
+G5150_P3G11	../../Output/WGS/work/G2640_P2B04.final.bam
+G5150_P3F07	../../Output/WGS/work/G2640_P2B11.final.bam
+G5150_P3F09	../../Output/WGS/work/G2640_P2C11.final.bam
+G5150_P3G09	../../Output/WGS/work/G2640_P2D11.final.bam
+G5150_P3B10	../../Output/WGS/work/G2640_P2E11.final.bam
+G5150_P3D10	../../Output/WGS/work/G2640_P2F11.final.bam
+G5150_P3B08	../../Output/WGS/work/G2640_P2G11.final.bam
+G5150_P3C07	../../Output/WGS/work/G2640_P2G09.final.bam
+G5150_P3E08	../../Output/WGS/work/G2640_P2D08.final.bam
+G5150_P3G10	../../Output/WGS/work/G2640_P2F09.final.bam
+G5150_P3C10	../../Output/WGS/work/G2640_P2B09.final.bam
+G5150_P1C06	../../Output/WGS/work/G70_P3E08.final.bam
+G5150_P3F11	../../Output/WGS/work/G2640_P2C06.final.bam
+G5150_P3D02	../../Output/WGS/work/G70_P2B10.final.bam
+G5150_P3F05	../../Output/WGS/work/G70_P2G10.final.bam
+G5150_P2C04	
+G5150_P3D03	../../Output/WGS/work/G70_P2B08.final.bam
+G5150_P1G04	../../Output/WGS/work/G70_P3B07.final.bam
+G5150_P1C04	../../Output/WGS/work/G70_P3C07.final.bam
+G5150_P2G05	
+G5150_P2C02	
+G5150_P2G04	
+G5150_P2B05	
+G5150_P2D03	
+G5150_P2F02	
+G5150_P2E06	
+G5150_P2C05	
+G5150_P2D06	
+G5150_P2C06	
+G5150_P2B04	
+G5150_P2C11	
+G5150_P2B11	
+G5150_P2E11	
+G5150_P2G08	
+G5150_P2F07	
+G5150_P2B07	
+G5150_P2G10	
+G5150_P2B10	
+G5150_P2B08	
+G5150_P2D11	
+G5150_P2B09	
+G5150_P2E08	
+G5150_P2D08	
+G5150_P2C10	
+G5150_P2G09	
+G5150_P2G11	
+G5150_P2F11	
+G5150_P2F09	
+G7530_P2C05	../../Output/WGS/combined_work/G7530_P2C05.final.bam
+G7530_P2E06	../../Output/WGS/combined_work/G7530_P2E06.final.bam
+G7530_P2D03	../../Output/WGS/combined_work/G7530_P2D03.final.bam
+G7530_P2F02	../../Output/WGS/combined_work/G7530_P2F02.final.bam
+G7530_P2B05	../../Output/WGS/combined_work/G7530_P2B05.final.bam
+G7530_P2B08	../../Output/WGS/combined_work/G7530_P2B08.final.bam
+G7530_P2C02	../../Output/WGS/combined_work/G7530_P2C02.final.bam
+G7530_P2G05	../../Output/WGS/combined_work/G7530_P2G05.final.bam
+G7530_P3D09	../../Output/WGS/combined_work/G7530_P3D09.final.bam
+G7530_P2C04	../../Output/WGS/combined_work/G7530_P2C04.final.bam
+G7530_P2G04	../../Output/WGS/combined_work/G7530_P2G04.final.bam
+G7530_P2E08	../../Output/WGS/combined_work/G7530_P2E08.final.bam
+G7530_P2D06	../../Output/WGS/combined_work/G7530_P2D06.final.bam
+G7530_P2B04	../../Output/WGS/combined_work/G7530_P2B04.final.bam
+G7530_P3C11	../../Output/WGS/combined_work/G7530_P3C11.final.bam
+G7530_P3D11	../../Output/WGS/combined_work/G7530_P3D11.final.bam
+G7530_P3E11	../../Output/WGS/combined_work/G7530_P3E11.final.bam
+G7530_P3F11	../../Output/WGS/combined_work/G7530_P3F11.final.bam
+G7530_P3G11	../../Output/WGS/combined_work/G7530_P3G11.final.bam
+G7530_P3F07	../../Output/WGS/combined_work/G7530_P3F07.final.bam
+G7530_P3F09	../../Output/WGS/combined_work/G7530_P3F09.final.bam
+G7530_P3G09	../../Output/WGS/combined_work/G7530_P3G09.final.bam
+G7530_P3B10	../../Output/WGS/combined_work/G7530_P3B10.final.bam
+G7530_P3D10	../../Output/WGS/combined_work/G7530_P3D10.final.bam
+G7530_P3B08	../../Output/WGS/combined_work/G7530_P3B08.final.bam
+G7530_P2F09	../../Output/WGS/combined_work/G7530_P2F09.final.bam
+G7530_P3B07	../../Output/WGS/combined_work/G7530_P3B07.final.bam
+G7530_P3E08	../../Output/WGS/combined_work/G7530_P3E08.final.bam
+G7530_P3G10	../../Output/WGS/combined_work/G7530_P3G10.final.bam
+G7530_P3C10	../../Output/WGS/combined_work/G7530_P3C10.final.bam
+G7530_P2B09	../../Output/WGS/combined_work/G7530_P2B09.final.bam
+G7530_P2G10	../../Output/WGS/combined_work/G7530_P2G10.final.bam
+G7530_P2B10	../../Output/WGS/combined_work/G7530_P2B10.final.bam
+G7530_P3B11	../../Output/WGS/combined_work/G7530_P3B11.final.bam
+G7530_P2C06	../../Output/WGS/combined_work/G7530_P2C06.final.bam
+G7530_P3E02	../../Output/WGS/combined_work/G7530_P3E02.final.bam
+G7530_P3C03	../../Output/WGS/combined_work/G7530_P3C03.final.bam
+G7530_P2B11	../../Output/WGS/combined_work/G7530_P2B11.final.bam
+G7530_P2C11	../../Output/WGS/combined_work/G7530_P2C11.final.bam
+G7530_P2D11	../../Output/WGS/combined_work/G7530_P2D11.final.bam
+G7530_P2E11	../../Output/WGS/combined_work/G7530_P2E11.final.bam
+G7530_P2F11	../../Output/WGS/combined_work/G7530_P2F11.final.bam
+G7530_P2G11	../../Output/WGS/combined_work/G7530_P2G11.final.bam
+G7530_P2G09	../../Output/WGS/combined_work/G7530_P2G09.final.bam
+G7530_P2C10	../../Output/WGS/combined_work/G7530_P2C10.final.bam
+G7530_P2D08	../../Output/WGS/combined_work/G7530_P2D08.final.bam
+G7530_P2B07	../../Output/WGS/combined_work/G7530_P2B07.final.bam
+G7530_P3D03	../../Output/WGS/combined_work/G7530_P3D03.final.bam
+G7530_P3D02	../../Output/WGS/combined_work/G7530_P3D02.final.bam
+G7530_P3F05	../../Output/WGS/combined_work/G7530_P3F05.final.bam
+G7530_P3F03	../../Output/WGS/combined_work/G7530_P3F03.final.bam
+G7530_P3G05	../../Output/WGS/combined_work/G7530_P3G05.final.bam
+G7530_P3G02	../../Output/WGS/combined_work/G7530_P3G02.final.bam
+G7530_P3C05	../../Output/WGS/combined_work/G7530_P3C05.final.bam
+G7530_P3C04	../../Output/WGS/combined_work/G7530_P3C04.final.bam
+G7530_P3D05	../../Output/WGS/combined_work/G7530_P3D05.final.bam
+G7530_P3G06	../../Output/WGS/combined_work/G7530_P3G06.final.bam
+G7530_P3C07	../../Output/WGS/combined_work/G7530_P3C07.final.bam
+G7530_P1C04	../../Output/WGS/combined_work/G7530_P1C04.final.bam
+G7530_P2G08	../../Output/WGS/combined_work/G7530_P2G08.final.bam
+G7530_P2F07	../../Output/WGS/combined_work/G7530_P2F07.final.bam
+G7530_P1G04	../../Output/WGS/combined_work/G7530_P1G04.final.bam
+G7530_P1C06	../../Output/WGS/combined_work/G7530_P1C06.final.bam
+G7530_P1E04	../../Output/WGS/combined_work/G7530_P1E04.final.bam
+G7530_P1B03	../../Output/WGS/combined_work/G7530_P1B03.final.bam
+G7530_P1C02	../../Output/WGS/combined_work/G7530_P1C02.final.bam
+G7530_P1G05	../../Output/WGS/combined_work/G7530_P1G05.final.bam
+G7530_P1B02	../../Output/WGS/combined_work/G7530_P1B02.final.bam
+G7530_P1C05	../../Output/WGS/combined_work/G7530_P1C05.final.bam
+G7530_P1D03	../../Output/WGS/combined_work/G7530_P1D03.final.bam
+G7530_P1F05	../../Output/WGS/combined_work/G7530_P1F05.final.bam
+G7530_P1B11	../../Output/WGS/combined_work/G7530_P1B11.final.bam
+G7530_P1C11	../../Output/WGS/combined_work/G7530_P1C11.final.bam
+G7530_P1E11	../../Output/WGS/combined_work/G7530_P1E11.final.bam
+G7530_P1B04	../../Output/WGS/combined_work/G7530_P1B04.final.bam
+G7530_P1G11	../../Output/WGS/combined_work/G7530_P1G11.final.bam
+G7530_P1G08	../../Output/WGS/combined_work/G7530_P1G08.final.bam
+G7530_P1F11	../../Output/WGS/combined_work/G7530_P1F11.final.bam
+G7530_P1F10	../../Output/WGS/combined_work/G7530_P1F10.final.bam
+G7530_P1C08	../../Output/WGS/combined_work/G7530_P1C08.final.bam
+G7530_P1F08	../../Output/WGS/combined_work/G7530_P1F08.final.bam
+G7530_P1C09	../../Output/WGS/combined_work/G7530_P1C09.final.bam
+G7530_P1D09	../../Output/WGS/combined_work/G7530_P1D09.final.bam
+G7530_P1G10	../../Output/WGS/combined_work/G7530_P1G10.final.bam
+G7530_P1G09	../../Output/WGS/combined_work/G7530_P1G09.final.bam
+G7530_P1C07	../../Output/WGS/combined_work/G7530_P1C07.final.bam
+G7530_P1B07	../../Output/WGS/combined_work/G7530_P1B07.final.bam
+G7530_P1E09	../../Output/WGS/combined_work/G7530_P1E09.final.bam
+G7530_P1H11	../../Output/WGS/combined_work/G7530_P1H11.final.bam
+G7530_P1F07	../../Output/WGS/combined_work/G7530_P1F07.final.bam
+G10150_P3C07	../../Output/WGS/work/G7530_P2G09.final.bam
+G10150_P2G05	
+G10150_P3B07	../../Output/WGS/work/G7530_P2C10.final.bam
+G10150_P3E08	../../Output/WGS/work/G7530_P2D08.final.bam
+G10150_P3G10	../../Output/WGS/work/G7530_P2F09.final.bam
+G10150_P3C10	../../Output/WGS/work/G7530_P2B09.final.bam
+G10150_P3D09	../../Output/WGS/work/G7530_P2E08.final.bam
+G10150_P2C02	
+G10150_P2C04	
+G10150_P2B05	
+G10150_P2D03	
+G10150_P2F02	
+G10150_P2E06	
+G10150_P2C05	
+G10150_P2D06	
+G10150_P2C06	
+G10150_P2B04	
+G10150_P3B08	../../Output/WGS/work/G7530_P2G11.final.bam
+G10150_P2G04	
+G10150_P3D10	../../Output/WGS/work/G7530_P2F11.final.bam
+G10150_P3C04	../../Output/WGS/work/G7530_P2C02.final.bam
+G10150_P3G09	../../Output/WGS/work/G7530_P2D11.final.bam
+G10150_P3D03	../../Output/WGS/work/G2640_P2B08.final.bam
+G10150_P3D02	../../Output/WGS/work/G2640_P2B10.final.bam
+G10150_P3F05	../../Output/WGS/work/G2640_P2G10.final.bam
+G10150_P3F03	../../Output/WGS/work/G2640_P2B07.final.bam
+G10150_P3G05	../../Output/WGS/work/G2640_P2F07.final.bam
+G10150_P3G02	../../Output/WGS/work/G2640_P2G08.final.bam
+G10150_P3C05	../../Output/WGS/work/G7530_P2G05.final.bam
+G10150_P2B11	
+G10150_P3D05	../../Output/WGS/work/G7530_P2G04.final.bam
+G10150_P3B10	../../Output/WGS/work/G7530_P2E11.final.bam
+G10150_P3C03	../../Output/WGS/work/G7530_P2B05.final.bam
+G10150_P3E02	../../Output/WGS/work/G7530_P2F02.final.bam
+G10150_P3B11	../../Output/WGS/work/G7530_P2E06.final.bam
+G10150_P3C11	../../Output/WGS/work/G7530_P2C05.final.bam
+G10150_P3D11	../../Output/WGS/work/G7530_P2C04.final.bam
+G10150_P3E11	../../Output/WGS/work/G7530_P2D06.final.bam
+G10150_P3F11	../../Output/WGS/work/G7530_P2C06.final.bam
+G10150_P3G11	../../Output/WGS/work/G7530_P2B04.final.bam
+G10150_P3F07	../../Output/WGS/work/G7530_P2B11.final.bam
+G10150_P3F09	../../Output/WGS/work/G7530_P2C11.final.bam
+G10150_P3G06	../../Output/WGS/work/G7530_P2D03.final.bam
+G10150_P2C11	
+G10150_P1G04	../../Output/WGS/work/G2640_P3B07.final.bam
+G10150_P2E11	
+G10150_P1C07	../../Output/WGS/work/G7530_P3D11.final.bam
+G10150_P1B07	../../Output/WGS/work/G7530_P3C11.final.bam
+G10150_P1E09	../../Output/WGS/work/G7530_P3B11.final.bam
+G10150_P1H11	../../Output/WGS/work/G7530_P3E02.final.bam
+G10150_P1G11	../../Output/WGS/work/G7530_P3G06.final.bam
+G10150_P1F11	../../Output/WGS/work/G7530_P3C03.final.bam
+G10150_P1E11	../../Output/WGS/work/G7530_P3D05.final.bam
+G10150_P1C11	../../Output/WGS/work/G7530_P3C04.final.bam
+G10150_P1B11	../../Output/WGS/work/G7530_P3C05.final.bam
+G10150_P1F05	../../Output/WGS/work/G7530_P3G02.final.bam
+G10150_P1D03	../../Output/WGS/work/G7530_P3G05.final.bam
+G10150_P1C05	../../Output/WGS/work/G7530_P3F03.final.bam
+G10150_P1B02	../../Output/WGS/work/G7530_P3F05.final.bam
+G10150_P1G05	../../Output/WGS/work/G7530_P3D02.final.bam
+G10150_P1C02	../../Output/WGS/work/G7530_P3D03.final.bam
+G10150_P1B04	../../Output/WGS/work/G2640_P3D09.final.bam
+G10150_P1B03	../../Output/WGS/work/G2640_P3C10.final.bam
+G10150_P1E04	../../Output/WGS/work/G2640_P3G10.final.bam
+G10150_P1C06	../../Output/WGS/work/G2640_P3E08.final.bam
+G10150_P1G09	../../Output/WGS/work/G7530_P3E11.final.bam
+G10150_P2D11	
+G10150_P1G10	../../Output/WGS/work/G7530_P3F11.final.bam
+G10150_P1C09	../../Output/WGS/work/G7530_P3F07.final.bam
+G10150_P2F11	
+G10150_P2G11	
+G10150_P2G09	
+G10150_P2C10	
+G10150_P2D08	
+G10150_P2F09	
+G10150_P2B09	
+G10150_P2E08	
+G10150_P2B08	
+G10150_P2B10	
+G10150_P2G10	
+G10150_P2B07	
+G10150_P1C04	../../Output/WGS/work/G2640_P3C07.final.bam
+G10150_P2G08	
+G10150_P1G08	../../Output/WGS/work/G7530_P3B08.final.bam
+G10150_P1F10	../../Output/WGS/work/G7530_P3D10.final.bam
+G10150_P1C08	../../Output/WGS/work/G7530_P3B10.final.bam
+G10150_P1D09	../../Output/WGS/work/G7530_P3G09.final.bam
+G10150_P1F08	../../Output/WGS/work/G7530_P3F09.final.bam
+G10150_P1F07	../../Output/WGS/work/G7530_P3G11.final.bam
+G10150_P2F07	

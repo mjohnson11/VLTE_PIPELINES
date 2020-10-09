@@ -1,0 +1,30 @@
+First, doing a round of alignment and SNP calling on only the generation 70 samples to refine our reference.
+This just fixes SNPs found in the founding genotypes that are not in our W303 reference. It isn't perfect and doesn't
+add in the markers or anything, and also is done once for all 3 founders - a, alpha, and diploid. Anyways, the point
+is just to make a new reference fasta so we end up with vcf files with fewer SNPs by getting rid of the obvious culprits.
+
+# Runs bwa etc. on gen 70 WGS files using the original w303 reference
+sbatch --array=1-90 orig_pilon_wgs_runner.sh
+
+# combines bams from gen 70 samples, runs pilon, and tidies up to produce a new fasta and gff
+sbatch combine_ref_bams_and_pilon.sh
+
+This is after doing pilon stuff
+
+# Fixes up the new reference for use
+sbatch setup_ref.sh
+
+# bwa, gatk, woo
+sbatch --array=1-540 wgs_runner.sh
+
+# gatk combining
+sbatch --array=1-18 combine_vcfs.sh
+# those jobs were an absolute nightmare to get done, some took over 2 days... maybe there is a better way...
+
+see how_I_setup_snpEFF.txt for how that worked
+
+sbatch annotate_vcfs.sh
+
+#calls python final_vcf_parsing.py, combines all the separate chromosome ones, adds some annotations, filters and outputs per well
+sbatch vcf_parsing.sh
+python final_vcf_parsing.py  

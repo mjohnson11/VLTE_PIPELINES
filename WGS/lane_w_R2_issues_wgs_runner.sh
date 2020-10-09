@@ -15,7 +15,7 @@ SAMP=$(sed -n ${SLURM_ARRAY_TASK_ID}'{p;q}' ../accessory_files/Samples.txt)
 SUF=$(sed -n ${SLURM_ARRAY_TASK_ID}'{p;q}' ../accessory_files/Sample_Suffixes.txt)
 PRE=$(sed -n ${SLURM_ARRAY_TASK_ID}'{p;q}' ../accessory_files/Sample_Prefixes.txt)
 
-DATAB="../../Data/WGS/raw_reads/lane_w_R2_issues/"
+DATAB="../../Data/WGS/raw_reads/lane_w_R2_issues/L2_"
 OUTD="../../Output/WGS/lane_w_R2_issues_"
 
 # 1 TRIMMING

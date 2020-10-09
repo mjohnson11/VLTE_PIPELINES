@@ -10,7 +10,6 @@
 #SBATCH --mail-type=ALL              # Type of email notification- BEGIN,END,FAIL,ALL
 #SBATCH --mail-user=milo.s.johnson.13@gmail.com  # Email to which notifications will be sent
 
-module load Anaconda3/5.0.1-fasrc01
-source activate milo_simple_conda5
+source activate milo_py37
 
 python process_FA_data.py

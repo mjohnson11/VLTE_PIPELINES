@@ -32,7 +32,7 @@ def alignment(r):
     current_spot = 0
     for character in cigar:
         if character in ['M', 'D', 'I', 'S', 'H', '=', 'X']:
-            if character in ['S', 'H', '=', 'X']:
+            if character in ['H', '=', 'X']:
                 return new_seq
             elif character == 'M':
                 new_seq += seq[current_spot:current_spot+int(current_nums)]
@@ -56,29 +56,37 @@ wells = ['P1B02', 'P1B03', 'P1B04', 'P1B07', 'P1B11', 'P1C02', 'P1C04', 'P1C05',
 'P3G05', 'P3G06', 'P3G09', 'P3G10', 'P3G11']
 gens = [70, 1410, 2640, 5150, 7530, 10150]
 chromo_mut_positions = defaultdict(list)
+chromos = ['chrI', 'chrII', 'chrIII', 'chrIV', 'chrIX', 'chrMito', 'chrV', 'chrVI', 'chrVII', 
+           'chrVIII', 'chrX', 'chrXI', 'chrXII', 'chrXIII', 'chrXIV', 'chrXV', 'chrXVI', '2-micron']
 #done_wells = [i.split('/')[-1].split('.')[0] for i in glob('../../Output/Browser/evidence_sams/*.tsv')]
 for well in wells[start_well_index*10:start_well_index*10+10]:
-    f = '../../Output/WGS/well_output/' + well + '_filtered.tsv'
+    f = '../../Output/WGS/combined_option/well_output/' + well + '_filtered.tsv'
     otime = time.time()
     #if well not in done_wells:
     print(well)
     td = pd.read_csv(f, delimiter='\t')
     td['pos2'] = td['POS']
-    bedfile = '../../Output/Browser/evidence_sams/'+well+'_mut_regions.bed'
+    bedfile = '../../Output/Browser/evidence_sams/tmp'+well+'_mut_regions.bed'
     td[['CHROM', 'POS', 'pos2']].to_csv(bedfile, sep='\t', index=False, header=False)
     for entry in td.as_matrix(['CHROM', 'POS']):
         chromo_mut_positions[entry[0]].append(entry[1])
     dats = []
     for gen in gens:
         try:
-            outsam = '../../Output/Browser/evidence_sams/G'+str(gen)+well+'.tsv'
+            outsam = '../../Output/Browser/evidence_sams/tmp/G'+str(gen)+'_'+well+'.tsv'
             subprocess.call(['samtools view ../../Output/WGS/work/G' + str(gen) + '_' + well + '.sam' + ' -L ' + bedfile + ' -o ' + outsam], shell=True)
             td = pd.read_csv(outsam, delimiter='\t', header=None, names=sam_cols, index_col=False)
+            if gen in [70, 2640, 7530]:
+                outsam2 = '../../Output/Browser/evidence_sams/tmp/G'+str(gen)+'_'+well+'_2.tsv'
+                subprocess.call(['samtools view ../../Output/WGS/lane_w_R2_issues_work/G' + str(gen) + '_' + well + '.sam' + ' -L ' + bedfile + ' -o ' + outsam2], shell=True)
+                td = pd.concat([td, pd.read_csv(outsam2, delimiter='\t', header=None, names=sam_cols, index_col=False)])
             td['Gen'] = [gen]*len(td)
             td['Evidence_for'] = td.apply(lambda r: is_evidence(r, chromo_mut_positions), axis=1)
             td['Aligned'] = td.apply(lambda r: alignment(r), axis=1)
-            dats.append(td)
+            dats.append(td[['RNAME', 'POS', 'Gen', 'Aligned']])
         except FileNotFoundError:
             print('File missing for', str(gen), well)
-    pd.concat(dats).to_csv('../../Output/Browser/evidence_sams/'+well+'_expanded_sam.tsv', sep='\t', index=False)
+    full_dat = pd.concat(dats)
+    for chromo in chromos:
+        full_dat[full_dat['RNAME']==chromo].sort_values(by='POS').to_csv('../../Output/Browser/evidence_sams/'+well+'_' + chromo + '_sam.tsv', sep='\t', index=False)
     print('done in', time.time()-otime)
