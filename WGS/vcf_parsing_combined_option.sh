@@ -12,5 +12,5 @@
 
 source activate milo_py37
 #combines all the separate chromosome ones, adds some annotations, filters and splits into per well output
-#python final_vcf_parsing.py ../../Output/WGS/combined_option/ 
+python final_vcf_parsing.py ../../Output/WGS/combined_option/ 
 python process_files_and_run_go.py ../../Output/WGS/combined_option/ 
