@@ -1,0 +1,19 @@
+@HD	VN:1.5
+@SQ	SN:chrI	LN:230199	M5:932d6cd826192ab77aef8c23fffd3651	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrII	LN:813074	M5:ad12ddea6253132f152c20627665d068	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrIII	LN:317068	M5:150b66dbec83d43aaa9a45b68ae3e575	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrIV	LN:1532074	M5:7267cbc20319741b6ee3277737fb6be2	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrV	LN:576825	M5:f415509e23e7d83b8aa5830d8a13bd10	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrVI	LN:270228	M5:59b2230e07b174b1d33390b0ea11285e	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrVII	LN:1091256	M5:7feb88852036e1c9f90af19f2b013d6c	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrVIII	LN:563289	M5:a701296523bae0b6237c1fe8790cc0e4	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrIX	LN:439888	M5:dc34b99beb001db22e74eeaaa52b4972	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrX	LN:745449	M5:2affe47983039be67aac045f305932fc	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrXI	LN:667352	M5:c279850a905bff1ed48c4da7961e7631	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrXII	LN:1078715	M5:7c68f61327bcba6d76a4a931bc0e0dc4	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrXIII	LN:924745	M5:3a561748c428e7a56ff8e4265760f11f	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrXIV	LN:784529	M5:1f15085c44e1eb7dbf47eeca0718ee7d	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrXV	LN:1090877	M5:ab22ea2d6cbf3f16c8bd41b7b52a2b99	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrXVI	LN:948048	M5:9d5a259d22ee858f0b0784371d1297b2	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:chrMito	LN:85851	M5:c9a7e3eee19a703a59c9429ef35068e4	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
+@SQ	SN:2-micron	LN:6318	M5:25f75844ff9f39208ed084167d5a5b0b	UR:file:/net/fs2k01/srv/export/desai_lab/share_root/users/mjohnson/VLTE/WGS_analysis/reference/w303_vlte.fasta
